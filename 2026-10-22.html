@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 早报 2026-10-22：Anthropic 发布主动式智能体 Claude Duet，对标 Meta Muse 与 OpenAI Dots</title>
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; line-height: 1.75; background: #fafafa; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) { body { background: #121212; color: #e8e8e8; } }
+.wrap { max-width: 780px; margin: 0 auto; padding: 24px 20px 64px; }
+.topbar { max-width: 780px; margin: 0 auto; padding: 16px 20px 0; }
+.topbar a { color: #888; text-decoration: none; font-size: 14px; }
+.topbar a:hover { text-decoration: underline; }
+h1 { font-size: 26px; line-height: 1.4; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e0e0e0; }
+@media (prefers-color-scheme: dark) { h2 { border-bottom-color: #333; } }
+.meta { color: #888; font-size: 14px; margin-bottom: 8px; }
+blockquote { margin: 20px 0 8px; padding: 12px 16px; border-left: 4px solid #2563eb; background: #eef4ff; border-radius: 0 8px 8px 0; }
+@media (prefers-color-scheme: dark) { blockquote { background: #1a2333; } }
+blockquote p { margin: 0; font-weight: 600; }
+p { margin: 10px 0; }
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #2563eb; }
+figure { margin: 16px 0; }
+figure img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; display: block; background: #e8e8e8; }
+figcaption { font-size: 12px; color: #999; text-align: center; margin-top: 6px; }
+hr { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+@media (prefers-color-scheme: dark) { hr { border-top-color: #333; } }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+@media (prefers-color-scheme: dark) { footer { border-top-color: #333; } }
+.day-list { list-style: none; padding: 0; }
+.day-list li { margin: 0; padding: 16px 4px; border-bottom: 1px solid #e8e8e8; }
+@media (prefers-color-scheme: dark) { .day-list li { border-bottom-color: #2a2a2a; } }
+.day-list a { text-decoration: none; color: inherit; display: block; }
+.day-list a:hover .day-title { color: #2563eb; }
+.day-date { font-size: 13px; color: #999; }
+.day-title { font-size: 17px; font-weight: 600; margin-top: 2px; }
+.hero { margin: 24px 0 8px; }
+.hero p { color: #666; }
+@media (prefers-color-scheme: dark) { .hero p { color: #aaa; } }
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← 全部早报</a></div>
+<div class="wrap">
+<h1>AI 早报 2026-10-22：Anthropic 发布主动式智能体 Claude Duet，对标 Meta Muse 与 OpenAI Dots</h1>
+<p>今日概览 · 12 条</p>
+<h2>3 分钟速览</h2>
+<ol>
+<li><strong>Anthropic 发布 Claude Duet</strong>：主动式 AI agent 应用，Opus 5.5 驱动，每天早上先给你发跨应用简报；iOS、Android、claude.ai 三端，research preview 需 waitlist，首批仅美国 Pro/Max 订阅者——&quot;先你一步&quot;的主动式助手大战正式开打（路透、VentureBeat）。</li>
+<li><strong>OpenAI 前沿模型 + Codex 登陆 Google Cloud</strong>：GPT-6 Astra、GPT-6.1 Sol、GPT-6 Luna 进 Model Garden 私有预览，未来进 Antigravity 和 Gemini Agent；OpenAI 模型至此集齐微软、AWS、Google 三大云（Google Cloud 官方博客、路透）。</li>
+<li><strong>NVIDIA 在 GTC Berlin 发布 Vera Rubin DSX Pods</strong>：集装箱式模块化 AI 工厂，出厂预装预测试，部署时间从 6 个月压缩到最短 14 天，2027 年初全球交付；同场发布 agent 安全沙箱标准 OpenShell（NVIDIA 官方新闻稿、Barron&#x27;s）。</li>
+<li><strong>据报道，Anthropic IPO 招股书草案显示上半年净亏损 807 亿美元</strong>：其中 720 亿是可转债公允价值变动的非现金会计计提；上半年营收 163 亿美元，算力支出近 90 亿美元，承诺未来 10 年至少 5180 亿美元基建投入；公司预计 11 月上市（WSJ、路透）。</li>
+<li><strong>新墨西哥州法院判 Meta 赔偿 250 亿美元</strong>：陪审团认定 4300 万次违反州消费者保护法（剑桥分析案），法官按州法本应判 2190 亿美元以上后减至 250 亿美元；Meta 表示将上诉（TechCrunch、路透）。</li>
+</ol>
+<h2>要闻</h2>
+<blockquote>
+<p><strong>Anthropic 发布 Claude Duet：每天早上先给你发简报的主动式智能体，正面对标 Meta Muse 与 OpenAI Dots</strong></p>
+</blockquote>
+<figure><img src="https://images.macrumors.com/t/zDVYQzbPatEc5AcrGU6yy4yraL8=/400x0/article-new/2026/10/claude-duet-scaled.jpg?lossy" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 21 日，Anthropic 发布 Claude Duet——一个独立的主动式 AI agent 应用，定位是&quot;职场人士和小企业主的 proactive 助手&quot;。Duet 每天早上推送一份跨应用简报，之后每隔几小时检查一次你连接的应用，只在有事项需要处理时才打扰你；能排会、追欠款发票、做财务预测、搭网页应用，跑在云端虚拟机加自带浏览器里，关掉 App 也能继续干活。Duet 基于 Opus 5.5，接入 Claude Marketplace 的 6000+ connectors（Gmail、Slack 等），可经 Stripe Link / Shopify Shop Pay 在用户批准下完成支付；发消息、付款、签文件、删文件等敏感动作必须经过用户批准。目前为 research preview，需 waitlist，仅美国 Pro/Max 订阅者可用，且计入现有用量额度。Anthropic 官方 X 账号 @claudeai 同日发帖确认，首批邀请将分波发放。</p>
+<p><strong>为什么重要：</strong> 这是 Anthropic 对 Meta Muse（上月发布）和 OpenAI Dots（上月发布&quot;always-on dots&quot;）的正面回应——&quot;主动式 agent&quot;从聊天框里走出来，变成每天早上先给你发简报的&quot;数字同事&quot;。三家路线几乎一致（云端 VM + 自带浏览器 + 先提醒后执行），拼的不再是模型智商，而是谁更敢替你做决定、以及用户敢把多少权限交出去。Anthropic 自己承认 Duet 会&quot;误判紧急程度&quot;、个人事务（如订票）还不太行——这句实话比功能列表更值得记住：主动式 agent 的第一个坎不是能力，是&quot;分寸感&quot;。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.reuters.com/technology/anthropic-unveils-claude-duet-ai-agent-app-2026-10-21/</li>
+<li>https://www.macrumors.com/2026/10/21/anthropic-claude-duet/</li>
+<li>https://venturebeat.com/technology/anthropics-answer-to-muse-is-here-claude-duet-a-mobile-and-desktop-ai-agent-that-takes-actions-proactively</li>
+</ul>
+<blockquote>
+<p><strong>OpenAI 前沿模型 + Codex 登陆 Google Cloud：GPT-6 集齐三大云，云厂商正式成为&quot;中立货架&quot;</strong></p>
+</blockquote>
+<figure><img src="https://storage.googleapis.com/gweb-cloudblog-publish/images/Open-ai-google-models-hero.max-2500x2500.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 21 日，OpenAI 与 Google Cloud 联合宣布：OpenAI 前沿模型与 Codex agentic workflow 进入 Google Cloud Model Garden。首批三款——GPT-6 Astra（旗舰，编码/科学研究）、GPT-6.1 Sol（接近 Astra 的低成本版）、GPT-6 Luna（高速低价日常版）——已向部分企业客户私有预览，GA 在未来几周；Codex CLI/Desktop 可直连 Google Gemini 平台做推理；未来还将进入 Google Antigravity 和 Gemini Agent。采购走 Google Cloud Marketplace，一张账单、可抵扣已有云消费承诺、计入 Flexible Savings Plans。OpenAI 在公告中强调&quot;Microsoft 仍是主要云合作伙伴&quot;。背景：OpenAI 与微软的独家分销已于今年 4 月到期，先后上了 AWS，如今集齐三大云。</p>
+<p><strong>为什么重要：</strong> 云厂商正在从&quot;卖自家模型&quot;转向&quot;当中立货架&quot;——Google Cloud 现在是唯一同时卖 Gemini、Claude、GPT 三家闭源旗舰模型的超大规模云。Hyperscaler 正在成为前沿实验室最重要的分销渠道（抽成 + 锁定消费承诺），&quot;模型在哪卖&quot;正在变得和&quot;模型有多强&quot;一样重要。对 Anthropic 来说，自家模型在 Google 货架上和 GPT 并排陈列——Duet 发布第二天，就要在渠道端打贴身肉搏。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers</li>
+<li>https://northlandnewsradio.com/2026/10/21/openai-to-sell-its-top-models-on-google-cloud-in-latest-enterprise-push/</li>
+<li>https://www.pymnts.com/news/artificial-intelligence/2026/openai-brings-its-frontier-ai-models-to-google-cloud/</li>
+</ul>
+<blockquote>
+<p><strong>NVIDIA 在 GTC Berlin 发布 Vera Rubin DSX Pods：集装箱式 AI 工厂，部署从 6 个月压缩到 14 天</strong></p>
+</blockquote>
+<figure><img src="https://www.webpronews.com/wp-content/uploads/2026/10/nvidia-dsx-pod-ai-factories-featured.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 21 日 GTC Berlin，黄仁勋发布 Vera Rubin DSX Pods：把整套 AI 工厂（计算、网络、布线、机架供电、液冷）预装进标准集装箱，在工厂完成集成测试后整柜发货，到预备好的场地接上水电网即可开工，部署时间从约 6 个月压缩到最短 14 天。单个 Pod 约标准集装箱大小、重约 28 吨，可用卡车在普通公路运输；17 家制造与基建伙伴（Dell、HPE、Vertiv、联想、富士康 Ingrasys、广达、和硕、纬创、技嘉等）2027 年初全球交付。黄仁勋的算法很直白：&quot;AI 工厂只有开始产 token 才创造价值&quot;，按年 400 亿美元收入计，晚 3 个月上线等于少收 100 亿美元。同场还发布了 OpenShell 参考架构（让 Anthropic、OpenAI、Google、Meta、SpaceX 的 agent 在受控沙箱里跑，CrowdStrike、Palo Alto Networks、SAP、ServiceNow 参与）、T-Mobile 与诺基亚在现网完成首个 AI-RAN 通话，以及 Vera Rubin 全面量产、未来 3 年封装基板产能扩 2.5 倍等消息。</p>
+<p><strong>为什么重要：</strong> 英伟达卖的从来不只是芯片，是&quot;从出货到产 token 的时间&quot;。DSX Pods 把数据中心从&quot;建筑工程&quot;变成&quot;物流问题&quot;——当算力交付可以按&quot;集装箱&quot;计数，neocloud 和主权 AI 客户的采购门槛被大幅拉低，英伟达的出货节奏也不再被工地进度卡脖子。更值得玩味的是 OpenShell：芯片公司开始给 agent 定&quot;安全沙箱&quot;标准，英伟达正在往&quot;AI 工厂总包商&quot;的身份上爬。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.morningstar.com/news/globe-newswire/9850300/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment</li>
+<li>https://www.barrons.com/articles/nvidia-huang-data-centre-ai-pods-6812247d</li>
+<li>https://www.webpronews.com/nvidia-dsx-pod-vera-rubin-ai-factory-containers-gtc-berlin/</li>
+</ul>
+<h2>开发生态</h2>
+<blockquote>
+<p><strong>Blacksmith 获 Sequoia 领投 6600 万美元 C 轮，估值 10 亿美元：给 AI 写的代码当&quot;质检员&quot;</strong></p>
+</blockquote>
+<figure><img src="https://techcrunch.com/wp-content/uploads/2026/10/Blacksmith.jpg?resize=1200,800" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 21 日，CI 平台 Blacksmith 宣布 6600 万美元 C 轮融资，Sequoia 领投，估值 10 亿美元晋身独角兽。公司做的是&quot;让持续集成不那么痛苦&quot;：为 AI 生成的代码跑构建、测试、合并、验证。官方披露：ARR 增长 17 倍，已跑过 9000 万次 CI job，客户包括 Mercury、Granola。值得注意的是节奏：这轮距离 4500 万美元的 B 轮仅 2 个月（当时估值 5.5 亿美元），一年前 A 轮后估值才 6000 万美元，累计融资 1.25 亿美元。</p>
+<p><strong>为什么重要：</strong> Agent 写代码的最大瓶颈不是生成，是&quot;敢不敢信&quot;——CI 正在从研发 supporting 角色变成 AI 代码的&quot;质检关口&quot;。Blacksmith 一年估值翻 16 倍，说明市场已经在为&quot;验证 AI 写的东西&quot;单独付费。这条赛道是 agent 落地的隐形刚需：代码量越大，质检越值钱。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/</li>
+</ul>
+<h2>技术与洞察</h2>
+<blockquote>
+<p><strong>Meta 暂停 Muse 对话分享功能：6800 个分享链接可被批量枚举，含贷款申请与银行预警</strong></p>
+</blockquote>
+<figure><img src="https://www.engadget.com/img/gallery/meta-suspends-muse-chats-sharing-feature-after-it-left-private-details-exposed/l-intro-1792526399.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>安全公司 Claroc 披露：Meta 上月发布的 Muse AI 的对话分享功能存在设计缺陷——分享链接的子域名直接用了对话标题（挂在 cf.metaaiusercontent.com 下），可通过被动 DNS 记录批量枚举。Claroc 一次查询就扒出约 6800 个分享链接，其中包含小企业贷款申请、银行欺诈预警（含部分账号信息）、公司假期日历、与某前沿 AI 实验室的会议纪要等敏感内容。Claroc 10 月 8 日已通过 bug bounty 上报，Meta 在 10 月 21 日宣布暂停该功能，称&quot;正在审查报告并考虑修改链接可发现性&quot;。Ars Technica 最早报道，Engadget 跟进。</p>
+<p><strong>为什么重要：</strong> 这不是黑客攻击，是产品设计把&quot;可分享&quot;和&quot;可发现&quot;混为一谈——随机 ID 防猜测，但标题进 DNS 等于把目录公开。Agent 越来越多地接触企业真实数据（贷款、财务、日历），分享功能的默认安全水位必须按&quot;最敏感的那次对话&quot;来设。对所有做 agent 分享/协作功能的团队：先去查一下你们的分享链接长什么样。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.engadget.com/2292281/meta-suspends-muse-chats-sharing-feature-after-it-left-private-details-exposed/</li>
+<li>https://www.esecurityplanet.com/threats/news-meta-muse-chat-links-passive-dns-exposure/</li>
+</ul>
+<blockquote>
+<p><strong>《财经》解析 DeepSeek：单卡每小时收入 38 美元，毛利率超 80%，&quot;把赚钱的秘密开源了&quot;</strong></p>
+</blockquote>
+<figure><img src="https://n.sinaimg.cn/spider20261021/178/w640h338/20261021/f7c5-e702fd201c6476f9a5374449e90b0a0e.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 21 日，《财经》主笔吴俊宇发表深度分析，拆解 DeepSeek 随 DeepInfer 开源披露的经营数据：单一集群每天服务 155 万亿 tokens，按波谷定价折算每卡每小时收入 38 美元。横向对比：AWS/Azure/Google Cloud 上 H200 单卡租赁价 6-8 美元/小时，B300 列表价 15-20 美元/小时（市场实际成交 B300 约 8-10 美元）——DeepSeek 卖 token 的收入能力是直接租卡的 2-6 倍；按 H200 成本口径，毛利率超 80%。SemiAnalysis 数据佐证：用通用 vLLM 框架跑 DeepSeek-V4.1-Flash，H200 空闲时段每卡每小时 token 收入仅约 0.79 美元，连卡租都覆盖不了；B300 空闲时段约 14.88 美元，仅为 DeepSeek 自有框架下波谷收入的四成。这解释了为什么部分云厂商宁愿把请求转发给 DeepSeek 官网，也不愿自部署——某云厂商人士称&quot;即便按原价转售、不赚差价，也比自部署更划算&quot;。</p>
+<p><strong>为什么重要：</strong> 这是国内第一家把&quot;单卡收入&quot;摊在台面上的模型公司——开源的不只是代码，还有成本结构。80%+ 毛利率意味着推理效率本身就是护城河：同样的卡，DeepSeek 能榨出 2-6 倍收入。对 Fireworks、Together 这类推理服务商和所有自建推理的云厂商，这是直接的价格压力；对国产芯片也是背书：效率优化的上限还远没到。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://finance.sina.cn/stock/jdts/2026-10-21/detail-inivynsm5420995.d.html</li>
+<li>https://www.21jingji.com/article/20261021/herald/8225dc17d550b728eed25f5ea9b5d031.html</li>
+</ul>
+<h2>行业动态</h2>
+<blockquote>
+<p><strong>据报道，Anthropic 上半年净亏 807 亿美元：720 亿是非现金会计计提，11 月 IPO 在即</strong></p>
+</blockquote>
+<figure><img src="https://bworldonline.com/wp-content/uploads/2026/09/anthropic-dario-amodei.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>据《华尔街日报》10 月 20 日引述 IPO 招股书草案（路透转引）：Anthropic 上半年净亏损 807 亿美元（去年同期 130 亿美元），其中 720 亿美元是可转债等融资工具公允价值上升带来的非现金会计计提，并非经营现金流出。上半年营收 163 亿美元；算力与基建支出近 90 亿美元（去年同期 23 亿美元）；承诺未来 10 年在云、算力、基建上至少投入 5180 亿美元。另据此前报道：Q3 营收 168 亿美元、环比 +45%，调整后已盈利；公司预计 11 月上市，部分投资者按约 1.5 万亿美元估值重新定价。</p>
+<p><strong>为什么重要：</strong> 807 亿这个数字看着吓人，但 720 亿是非现金的&quot;估值涨了所以债更贵了&quot;的会计处理——真正的信号是 90 亿美元半年算力开支和 5180 亿美元十年承诺。IPO 定价之争的本质是：市场愿不愿意为&quot;未来十年的 token 收入&quot;提前买单。11 月的上市将是 AI 一级市场估值体系第一次接受公开市场检验。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.reuters.com/business/anthropic-recorded-net-loss-over-80-billion-first-half-this-year-wsj-reports-2026-10-20/</li>
+<li>https://bworldonline.com/technology/2026/10/21/788335/anthropic-logged-net-loss-of-over-80-billion-in-first-half-of-2026/</li>
+</ul>
+<blockquote>
+<p><strong>Meta Q3：营收 646 亿美元超预期，上调 capex 至 1350-1450 亿，将发行 C 类股</strong></p>
+</blockquote>
+<figure><img src="https://nypost.com/wp-content/uploads/sites/2/2026/10/newspress-collage-19qb7403u-1792620579273.jpg?quality=75&strip=all&1792606219&w=1200" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 21 日盘后，Meta Q3 营收 646 亿美元（预期 633.7 亿美元），同比 +26%；广告收入 631 亿美元 +26%。净利润 98.6 亿美元、EPS 3.83，含 98.9 亿美元青少年心理健康诉讼和解费用（不含则为 7.40 美元）。Q4 指引 73-76 亿美元超预期，盘后涨超 4%。全年 capex 指引上调至 1350-1450 亿美元（此前 1300-1450 亿美元）；Q3 自由现金流 -21.2 亿美元（去年同期 +106.3 亿美元）。同时宣布 2027 年 1 月发行无投票权 C 类股（实际 1 拆 2），用于收购和留住人才，同时保持扎克伯格控制权。</p>
+<p><strong>为什么重要：</strong> 广告基本盘 +26% 是 AI 烧钱的底气——Meta 证明了&quot;烧 1400 亿&quot;的同时还能涨收入。但自由现金流由正转负是分水岭：Meta 正式从&quot;印钞机&quot;变成&quot;重资产公司&quot;。发 C 类股的操作（Google 式）说明扎克伯格在为&quot;更大规模的 AI 并购&quot;准备弹药，控制权稀释的账他算得很精。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://wdsm710.com/2026/10/21/meta-to-issue-new-class-of-shares-as-it-tightens-ai-spending-forecast/</li>
+<li>https://nypost.com/2026/10/21/business/meta-stock-surges-on-strong-earnings-report-tech-giant-unveils-new-shares-to-bankroll-ai-spending/</li>
+</ul>
+<blockquote>
+<p><strong>新墨西哥州法院判 Meta 赔偿 250 亿美元：剑桥分析案后续，美国史上最大单州判决之一</strong></p>
+</blockquote>
+<figure><img src="https://techcrunch.com/wp-content/uploads/2026/09/mark-zuckerberg-meta-connect.jpg?resize=1200,799" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 21 日，新墨西哥州法官命令 Meta 向该州支付 250 亿美元——陪审团认定 Meta 在剑桥分析案相关诉讼中 4300 万次违反州消费者保护法（每次 5000 美元罚款）。法官 Francis Mathew 在判决书中写道，按州法本应判 2190 亿美元以上，但减至 250 亿美元。Meta 首席法务官表示将上诉，称这&quot;几乎让在新墨西哥州做生意成为不可能&quot;。背景：新墨西哥州 2021 年起诉 Meta 欺骗用户数据隐私；该州未参与 Meta 8 月与 47 州达成的 171 亿美元和解（青少年心理健康案）。此前剑桥分析案 Meta 已在 2019 年被 FTC 罚 50 亿美元。</p>
+<p><strong>为什么重要：</strong> 250 亿美元是美国史上针对单一公司的最大单州判决之一——哪怕上诉后打折，也意味着&quot;数据隐私违法&quot;的定价被彻底重写。Meta 同一天财报 + 判赔：Q3 净利润 98.6 亿美元，一纸判决就是 2.5 个季度的利润。各州总检察长们已经看到了模板，接下来是排队上门的连锁诉讼。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://techcrunch.com/2026/10/21/meta-ordered-to-pay-25-billion-in-case-related-to-cambridge-analytica-scandal/</li>
+<li>https://wdsm710.com/2026/10/21/meta-ordered-to-pay-25-billion-to-new-mexico-after-jury-finds-company-misled-consumers-about-data-privacy/</li>
+</ul>
+<blockquote>
+<p><strong>法律 AI 公司 Legora 获 5.5 亿美元 E 轮，估值 88 亿美元：与 Harvey 的&quot;镜像融资&quot;</strong></p>
+</blockquote>
+<figure><img src="https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-2296593553.jpg?w=1024" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 21 日，瑞典法律 AI 公司 Legora 宣布 5.5 亿美元 E 轮，Atreides Management 领投，估值 88 亿美元。ARR 已超 2 亿美元（4 月 D 轮时为 1 亿美元），7 个月估值涨 57%，累计融资超 13 亿美元。资金用于 agentic OS（Legora aOS）研发和北美扩张。一个月前，老对手 Harvey 刚募 5.5 亿美元、估值 155 亿美元（ARR 超 2 亿美元）。法律 AI 正在从&quot;助手&quot;转向&quot;替律师干活&quot;的 AI services。</p>
+<p><strong>为什么重要：</strong> 法律是 AI 最先看到&quot;按结果付费&quot;的行业之一——5.5 亿对 5.5 亿、88 亿对 155 亿，两家头部在同一赛道、同一月份、同一金额融资，说明资本在押注&quot;法律工作流被 agent 重做&quot;。ARR 半年翻倍证明这不是故事，是真金白银的替代。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://techcrunch.com/2026/10/21/legal-ai-startup-legora-raises-550m-series-e-at-8-8b-valuation/</li>
+<li>https://news.bloomberglaw.com/artificial-intelligence/legal-ai-startup-legora-raises-funds-at-8-8-billion-valuation</li>
+</ul>
+<blockquote>
+<p><strong>Google Cloud A5X（NVIDIA Vera Rubin）11 月 GA：计划扩展至 96 万块 Rubin GPU</strong></p>
+</blockquote>
+<figure><img src="https://www.securities.io/wp-content/uploads/2026/10/google-cloud-a5x-nvidia-vera-rubin-november-availability.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 21 日，NVIDIA 在 GTC Berlin 宣布：Google Cloud 基于 Vera Rubin NVL72 的 A5X 实例 11 月 GA，并计划扩展到欧洲；Google Cloud 计划未来将 Vera Rubin 基建扩展到多站点共 96 万块 Rubin GPU（规划目标，非已装机）。A5X 组合：Vera Rubin NVL72 + ConnectX-9 SuperNIC + Google Virgo Network + Google 第四代液冷，接入 AI Hypercomputer，主打 agentic 推理与大规模强化学习。首个客户是 AlphaGo 之父 David Silver 的 Ineffable Intelligence（4 月获 11 亿美元种子轮，做&quot;从经验中持续学习&quot;的 superlearners）。</p>
+<p><strong>为什么重要：</strong> Google 一边开源 TorchTPU（昨天）一边大手笔租英伟达最新机架——&quot;自研 + 外购&quot;两条腿，说明即便 TPU 再强，Google 也不敢在 Rubin 这一代缺席。96 万块的规划数字是写给资本市场看的：云厂商的军备竞赛已进入&quot;按百万卡规划&quot;的阶段。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://teslanewswire.com/articles/google-cloud-a5x-nvidia-vera-rubin-general-availability-november-960000-rubin-gpus-oct-2026</li>
+<li>https://www.securities.io/google-cloud-a5x-on-nvidia-vera-rubin-set-for-november-availability/</li>
+</ul>
+<blockquote>
+<p><strong>大厂疯抢 FDE：字节 FDE 入驻企业日薪可达 1 万元，AI to B 的&quot;前线交付&quot;之战</strong></p>
+</blockquote>
+<figure><img src="https://n.sinaimg.cn/spider20261021/290/w1080h810/20261021/1b60-6816f8400170b69e11584998bb9d982b.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 21 日，《中国企业家》报道：FDE（Forward Deployed Engineer，前线部署工程师）——Palantir 带火的&quot;驻场交付&quot;岗位——正在中国大厂引发人才争夺战。字节豆包开出 105 万元年包，阿里云大模型 FDE 月薪 2-5.5 万（16 薪），月之暗面 Kimi 的 FDE 岗年包 109 万元；接近字节的人士称，有的字节 FDE 入驻企业日薪可达 1 万元。背景：今年夏天的 AI 办公大战（字节把飞书/TRAE/扣子并进豆包工作，阿里把 QoderWork/钉钉侧翼产品合成千问办公，腾讯 WorkBuddy 要求生态服务商自备 FDE 交付能力），大厂发现&quot;销售谈不清需求、研发够不着客户&quot;，FDE 成了 AI to B 落地的关键瓶颈岗。</p>
+<p><strong>为什么重要：</strong> 百万年薪抢的不是算法，是&quot;把模型塞进客户工作流&quot;的人——说明大模型竞争的重心正在从&quot;谁的模型分高&quot;转向&quot;谁的交付到现场&quot;。FDE 日薪 1 万是 AI to B 的真实价格发现：模型能力过剩，交付能力稀缺。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://finance.sina.cn/2026-10-21/detail-inivyxhf5393830.d.html</li>
+</ul>
+<hr>
+<p>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。</p>
+<footer>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。<br>由 Muse 每日自动生成 · <a href="index.html">归档首页</a></footer>
+</div>
+</body>
+</html>
