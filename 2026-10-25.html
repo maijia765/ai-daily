@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 早报 2026-10-25：AWS 开源 Infinity 智能体运行时，8GB 内存跑 7.5 万个 agent</title>
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; line-height: 1.75; background: #fafafa; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) { body { background: #121212; color: #e8e8e8; } }
+.wrap { max-width: 780px; margin: 0 auto; padding: 24px 20px 64px; }
+.topbar { max-width: 780px; margin: 0 auto; padding: 16px 20px 0; }
+.topbar a { color: #888; text-decoration: none; font-size: 14px; }
+.topbar a:hover { text-decoration: underline; }
+h1 { font-size: 26px; line-height: 1.4; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e0e0e0; }
+@media (prefers-color-scheme: dark) { h2 { border-bottom-color: #333; } }
+.meta { color: #888; font-size: 14px; margin-bottom: 8px; }
+blockquote { margin: 20px 0 8px; padding: 12px 16px; border-left: 4px solid #2563eb; background: #eef4ff; border-radius: 0 8px 8px 0; }
+@media (prefers-color-scheme: dark) { blockquote { background: #1a2333; } }
+blockquote p { margin: 0; font-weight: 600; }
+p { margin: 10px 0; }
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #2563eb; }
+figure { margin: 16px 0; }
+figure img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; display: block; background: #e8e8e8; }
+figcaption { font-size: 12px; color: #999; text-align: center; margin-top: 6px; }
+hr { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+@media (prefers-color-scheme: dark) { hr { border-top-color: #333; } }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+@media (prefers-color-scheme: dark) { footer { border-top-color: #333; } }
+.day-list { list-style: none; padding: 0; }
+.day-list li { margin: 0; padding: 16px 4px; border-bottom: 1px solid #e8e8e8; }
+@media (prefers-color-scheme: dark) { .day-list li { border-bottom-color: #2a2a2a; } }
+.day-list a { text-decoration: none; color: inherit; display: block; }
+.day-list a:hover .day-title { color: #2563eb; }
+.day-date { font-size: 13px; color: #999; }
+.day-title { font-size: 17px; font-weight: 600; margin-top: 2px; }
+.hero { margin: 24px 0 8px; }
+.hero p { color: #666; }
+@media (prefers-color-scheme: dark) { .hero p { color: #aaa; } }
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← 全部早报</a></div>
+<div class="wrap">
+<h1>AI 早报 2026-10-25：AWS 开源 Infinity 智能体运行时，8GB 内存跑 7.5 万个 agent</h1>
+<p>今日概览 · 6 条</p>
+<h2>3 分钟速览</h2>
+<ol>
+<li><strong>AWS 开源 Infinity 智能体运行时</strong>：与 UC Berkeley 联合发布，工具调用时挂起 agent，8GB 内存可支撑 7.5 万个并发 agent，闲置 agent 仅占约 100KB 内存。</li>
+<li><strong>Anthropic S-1 未如期公开</strong>：截至 10 月 24 日，SEC EDGAR 仍查不到 Anthropic 的招股书，此前多家媒体称最早 10 月 23 日公开递交；11 月中旬上市窗口正在收窄。</li>
+<li><strong>OpenAI 新一轮融资估值近 1.25 万亿美元</strong>：低于最初 1.5 万亿美元的目标，2027 年可能 IPO。</li>
+<li><strong>DeepSeek 千亿融资投资方名单曝光</strong>：据报道，兆易创新、美团、吉利、美的、博裕资本等 15 家以上机构参与，宁德时代、腾讯为最大投资方。</li>
+<li><strong>信通院报告</strong>：国内大模型词元价格较去年下半年翻倍，2026 年 6 月词元日均消耗量约 500 万亿，是 2025 年 12 月的近 4 倍。</li>
+</ol>
+<h2>要闻</h2>
+<blockquote>
+<p><strong>AWS 开源 Infinity 智能体运行时：8GB 内存跑 7.5 万个并发 agent，等待时零算力</strong></p>
+</blockquote>
+<figure><img src="https://static.aws-news.com/article-banners/01a169b6-9619-0b29-4be0-9d03e3aa8c8e.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 23 日，AWS 与 UC Berkeley 联合发布开源智能体运行时 Infinity（Apache 2.0，属 Hydro 项目）。它的核心设计是把工具调用当作挂起点：agent 发起工具调用后即挂起、只保留对话历史，等结果返回再恢复，类似编程语言里的无栈协程。官方称 8GB 内存可支撑 7.5 万个并发 agent，单个闲置 agent 仅占约 100KB 内存；还可跑在 Lambda + SQS + Aurora DSQL 的无服务器架构上，agent 等待期间不占用算力。Infinity 还内置 spawn_thread 与 report_to_parent 工具实现 agent 间通信，子线程默认处理事件，避免父 agent 的上下文窗口被工具输出撑爆。</p>
+<p>需要注意的是，&quot;7.5 万个 agent&quot;这个数字要打折扣：实测是在服务器级 AMD EPYC 单线程、接模拟模型、每 agent 跑 20 轮对话的条件下完成的，&quot;树莓派 5 能跑 7.5 万个&quot;是按 100KB/个换算出来的，并非在树莓派上实测。真实 agent 的工具输出、文件内容和报错日志会比测试用的 1.2KB 对话历史重得多。</p>
+<p><strong>为什么重要：</strong> 长时运行的 agent 最大的成本不是推理，而是&quot;干等&quot;——等构建、等工具、等人工审批。Infinity 把&quot;等待&quot;从占着算力变成只占内存，解决的是 agent 规模化的经济账。如果这个模型成立，跑 1 万个常驻 agent 的成本结构会完全改变；但官方数字是模拟条件下的，落地前得按真实负载重新算账。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://aws-news.com/article/2026-10-23-introducing-infinity-a-runtime-for-extreme-agent-concurrency</li>
+<li>https://alfw.ai/article/aws-infinity-75000-agents-pi-claim/</li>
+</ul>
+<blockquote>
+<p><strong>据报道，Anthropic S-1 未如期公开：SEC 查无记录，11 月中旬上市窗口收窄</strong></p>
+</blockquote>
+<figure><img src="https://worldngayon.com/wp-content/uploads/2026/10/anthropic-ipo-1792755982.webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>截至 10 月 24 日，SEC EDGAR 仍查不到 Anthropic 的 S-1 招股书。此前雅虎财经引述三名知情人士称，Anthropic 最早于 10 月 23 日公开递交招股书，目标 11 月中旬上市、估值最高 2 万亿美元，或成史上最大 IPO。但按 SEC 规则，路演开始前至少 15 天须公开递交 S-1，要赶在 11 月底前完成上市，最迟下周就必须递交。与此同时 AI 板块抛售给上市时机蒙上阴影：CoreWeave 两周内跌约 30%，Micron 一个月跌约 17%。市场目前预计 Anthropic 年内上市的概率约为 80%，但也有观点认为公司可能推迟上市、等待更有利的市场环境。</p>
+<p><strong>为什么重要：</strong> Anthropic 的 IPO 是今年 AI 行业最大的&quot;压力测试&quot;：它要验证的不是一家公司的估值，而是市场还愿不愿意为&quot;烧钱换算力&quot;的故事付 2 万亿美元。S-1 一天不公开，这个测试就一天不能开考；而 CoreWeave 们的跌幅说明，定价窗口正在被 AI 板块的抛售一点点关上。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.neoteo.com/en/anthropic-ipo-sec-search-found-no-s-1-match-on-oct-24</li>
+<li>https://www.kucoin.com/news/flash/anthropic-s-2t-ipo-faces-uncertainty-amid-ai-sector-sell-off</li>
+<li>https://www.fool.com/investing/2026/10/24/openai-nears-125-trillion-valuation-what-that-tells-investors-ahead-of-a-potential-2027-ipo/</li>
+</ul>
+<h2>行业动态</h2>
+<blockquote>
+<p><strong>OpenAI 新一轮融资估值近 1.25 万亿美元，较 1.5 万亿美元目标下调</strong></p>
+</blockquote>
+<figure><img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F70e8683480f86535bcb3f00cadc0a24df6591aef-1280x853.jpg&w=1200&op=resize" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 24 日消息，OpenAI 新一轮融资的估值接近 1.25 万亿美元，低于公司最初 1.5 万亿美元的目标。OpenAI 预计 2027 年可能 IPO，但分析认为与 Anthropic 同期上市会是错误，应等几个月、让市场消化完 Anthropic 这单史上最大 IPO 再说。四大 hyperscaler 今年的资本开支合计已超过 7000 亿美元，OpenAI 与 Anthropic 能否把这轮投入转化为利润，将决定整个 AI 估值体系是否成立。</p>
+<p><strong>为什么重要：</strong> 连 OpenAI 的估值目标都在往下调，说明一级市场对 AI 的定价也在跟着二级市场的抛售走。1.25 万亿美元仍是天文数字，但&quot;从 1.5 万亿下调&quot;这个动作本身，比数字更能说明风向。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.fool.com/investing/2026/10/24/openai-nears-125-trillion-valuation-what-that-tells-investors-ahead-of-a-potential-2027-ipo/</li>
+</ul>
+<blockquote>
+<p><strong>据报道，DeepSeek 千亿融资投资方名单曝光：兆易创新、美团、吉利等 15 家以上机构参与</strong></p>
+</blockquote>
+<figure><img src="https://n.sinaimg.cn/spider20261023/483/w900h383/20261023/7fec-522d83283bc7ac91d58bf00e1f53a7ca.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 23 日，据路透社引述四名知情人士消息，DeepSeek 约 1000 亿元第二轮融资的投资方包括兆易创新、美团、吉利、美的和现有股东网易；另三名知情人士称，其他投资方还包括博裕资本、CPE 源峰、君联资本，以及现有股东 IDG 资本，本轮投资方总数超过 15 家。此前彭博社报道，宁德时代和腾讯位列本轮融资最大的投资方。本轮融资约 1000 亿元（约合 150 亿美元），创下中国 AI 行业规模最大的融资纪录。</p>
+<p><strong>为什么重要：</strong> 投资方名单比融资额本身更说明问题：产业资本（宁德时代、吉利、美的、兆易创新）与互联网巨头（腾讯、美团、网易）同时下注，说明 DeepSeek 已经被当作中国 AI 产业链的&quot;基础设施&quot;来投，而不是一家单纯的模型公司。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://k.sina.cn/article_5953189932_162d6782c067051vzk.html</li>
+</ul>
+<blockquote>
+<p><strong>信通院报告：大模型词元价格较去年下半年翻倍，6 月日均消耗量约 500 万亿</strong></p>
+</blockquote>
+<figure><img src="https://g.foolcdn.com/editorial/images/770545/an-ai-chip-on-a-circuit-board.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 23 日，中国信通院人工智能研究所联合中国人工智能产业发展联盟发布《大模型词元服务性能监测报告（2026年）》。报告显示，词元服务呈现量价齐升：国内词元价格较去年下半年翻倍，量的增长达到 3 倍；2026 年 6 月，国内词元日均消耗量约 500 万亿，是 2025 年 12 月的近 4 倍。越来越多 MaaS 平台厂商通过公有云 API 方式供给大模型词元服务，而用户对词元服务性能缺乏直观判断依据、面临选型困难，是该报告开展的背景。</p>
+<p><strong>为什么重要：</strong> 词元是 AI 的&quot;电表读数&quot;：价格翻倍、用量翻 3 到 4 倍，说明大模型正在从&quot;演示&quot;变成&quot;生产资料&quot;，且需求增长快过了降价速度。对国内 MaaS 厂商来说，这是一份&quot;量价齐升&quot;的成绩单；对用户来说，选型难的问题还没解决，报告本身就是证据。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://finance.sina.com.cn/jjxw/2026-10-24/doc-iniwhxps4862275.shtml</li>
+</ul>
+<blockquote>
+<p><strong>AI 股抛售延续至 10 月 24 日：纳指周四跌 2.6% 后亚太跟跌，下周看 Alphabet、微软、亚马逊财报</strong></p>
+</blockquote>
+<figure><img src="https://cdn.adalytica.com/2026-10-24/coreweave-asml-nvidia-fall-ai-trade-worries-863f8c40/hero.webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>纳指 10 月 22 日下跌 2.6%（6 月以来最大单日跌幅）后，抛售在 10 月 23 日蔓延至亚太市场，10 月 24 日 AI 股再度承压。CoreWeave 两周内跌约 30%，Micron 一个月跌约 17%，英伟达 10 月 23 日收于 210.96 美元、较两天前下跌约 5%。导火索仍是同一个问题：AI 基建的投入能否转化为利润。高盛估计，五大 hyperscaler 明年的资本开支合计可能达到 1.2 万亿美元；下周 Alphabet、微软、亚马逊将公布财报，成为下一轮检验。</p>
+<p><strong>为什么重要：</strong> 市场不是在否定 AI，而是在换考题：从&quot;谁花的钱多&quot;换成&quot;谁赚得到钱&quot;。财报季接下来每一家 hyperscaler 的数字，都会被当作给整个 AI 交易定价的依据——涨跌的逻辑已经从&quot;信不信 AI&quot;变成了&quot;算不算得过账&quot;。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://adalytica.com/news/coreweave-asml-nvidia-fall-ai-trade-worries-863f8c40</li>
+<li>https://wisevoter.com/world/2026/10/24/ai-stocks-decline-rising-energy-costs</li>
+</ul>
+<hr>
+<p>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。</p>
+<footer>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。<br>由 Muse 每日自动生成 · <a href="index.html">归档首页</a></footer>
+</div>
+</body>
+</html>
