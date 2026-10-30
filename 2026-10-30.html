@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 早报 2026-10-30：Mistral 放出万亿参数 Large 4 开放权重，欧洲前沿模型可以自己跑了</title>
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; line-height: 1.75; background: #fafafa; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) { body { background: #121212; color: #e8e8e8; } }
+.wrap { max-width: 780px; margin: 0 auto; padding: 24px 20px 64px; }
+.topbar { max-width: 780px; margin: 0 auto; padding: 16px 20px 0; }
+.topbar a { color: #888; text-decoration: none; font-size: 14px; }
+.topbar a:hover { text-decoration: underline; }
+h1 { font-size: 26px; line-height: 1.4; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e0e0e0; }
+@media (prefers-color-scheme: dark) { h2 { border-bottom-color: #333; } }
+.meta { color: #888; font-size: 14px; margin-bottom: 8px; }
+blockquote { margin: 20px 0 8px; padding: 12px 16px; border-left: 4px solid #2563eb; background: #eef4ff; border-radius: 0 8px 8px 0; }
+@media (prefers-color-scheme: dark) { blockquote { background: #1a2333; } }
+blockquote p { margin: 0; font-weight: 600; }
+p { margin: 10px 0; }
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #2563eb; }
+figure { margin: 16px 0; }
+figure img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; display: block; background: #e8e8e8; }
+figcaption { font-size: 12px; color: #999; text-align: center; margin-top: 6px; }
+hr { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+@media (prefers-color-scheme: dark) { hr { border-top-color: #333; } }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+@media (prefers-color-scheme: dark) { footer { border-top-color: #333; } }
+.day-list { list-style: none; padding: 0; }
+.day-list li { margin: 0; padding: 16px 4px; border-bottom: 1px solid #e8e8e8; }
+@media (prefers-color-scheme: dark) { .day-list li { border-bottom-color: #2a2a2a; } }
+.day-list a { text-decoration: none; color: inherit; display: block; }
+.day-list a:hover .day-title { color: #2563eb; }
+.day-date { font-size: 13px; color: #999; }
+.day-title { font-size: 17px; font-weight: 600; margin-top: 2px; }
+.hero { margin: 24px 0 8px; }
+.hero p { color: #666; }
+@media (prefers-color-scheme: dark) { .hero p { color: #aaa; } }
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← 全部早报</a></div>
+<div class="wrap">
+<h1>AI 早报 2026-10-30：Mistral 放出万亿参数 Large 4 开放权重，欧洲前沿模型可以自己跑了</h1>
+<p>今日概览 · 7 条</p>
+<h2>3 分钟速览</h2>
+<ol>
+<li><strong>Mistral 放出 Large 4 开放权重</strong>：1.05 万亿参数、每 token 激活 520 亿，10 月 6 日预览版再经三周强化学习后正式可下载，API 价腰斩至每百万输入 token 0.70 美元。</li>
+<li><strong>英特尔三季度超预期、四季度指引却大跌</strong>：数据中心与 AI 收入大增 78% 至 73 亿美元，但四季度营收指引中值比预期低约 16 亿美元，盘后股价一度跌 23%。</li>
+<li><strong>亚马逊 AWS 增长 39%，自由现金流却转负 424 亿美元</strong>：云业务创近五年最快增速，但全年 2200 亿美元资本开支计划不变，过去 12 个月自由现金流由正 148 亿美元转为负 424 亿美元。</li>
+<li><strong>三星三季度营业利润创纪录</strong>：107.4 万亿韩元（约 805 亿美元），存储业务占利润约 99%，公司预计 AI 存储需求到 2027 年进一步超过供给。</li>
+<li><strong>OpenAI 重写 Model Spec</strong>：以&quot;忠于人类意图&quot;为核心重组为五大价值观，文档主角由&quot;助手&quot;改称&quot;GPT&quot;，并删去大部分风格细则。</li>
+</ol>
+<h2>要闻</h2>
+<blockquote>
+<p><strong>Mistral 放出 Large 4 开放权重：1.05 万亿参数、520 亿激活，欧洲前沿模型可以自己跑了</strong></p>
+</blockquote>
+<figure><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUnG4eyVZ1AsGVlj_lRa_P5U2D25H4o3Fdgr16C99l119DMR9FAKgFmfN3KRQIYgwm5p1EMgyqpstpEMmgC_0zWyzyD9C7D-358CVYnepen7j93nQyayrTkqpyVmd6UTBgkMQZyEpWWueoMpJlEaCX4Oc99j0YOsa1JT2_qxtQlY2vEtonO1zw__DsF1lH/s2736/mistral-large-4-feature-overlay.webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 29 日，Mistral AI 正式放出旗舰模型 Mistral Large 4（代号&quot;le Chonk&quot;）的开放权重。这是 10 月 6 日公开预览后的兑现：当时只开放 API，权重承诺 10 月底前发布；正式版又经过三周强化学习，并吸收了政府与企业测试者的反馈。模型为原生多模态混合专家架构，总参数 1.05 万亿、每 token 激活约 520 亿，上下文 100 万 token，支持 160 多种语言，在自家欧洲数据中心用 3800 张英伟达 Grace Blackwell GPU 从头训练。</p>
+<p>Mistral 公布的自测成绩主打编码与防御性网络安全：Terminal-Bench 4.0 从预览版的 28% 升至 41%，FrontierCode 2.0 为 19.7%，均为其宣称的开放权重最高分；Artificial Analysis 网络安全指数 51%，恶意网络请求平均拒答率 96.6%。API 价格较预览版腰斩：每百万输入 token 0.70 美元、输出 2.10 美元。许可为修改版 MIT 式&quot;Mistral 生态开放权重许可&quot;：可免费使用、微调、商用，但以&quot;模型即服务&quot;转售需另签商业许可。分发渠道包括 Hugging Face、Mistral Studio、OpenRouter、英伟达 NIM 容器与微软 Foundry（首家上线的云厂商）；量化版自托管约需 4 张英伟达 B200/B300 GPU。</p>
+<p><strong>为什么重要：</strong> 这是 2026 年迄今最大的开放权重事件：万亿参数级前沿模型第一次可以下载到自己的基础设施里跑。对安全团队尤其关键——可以拿最强的模型扫自己的代码，而不必把敏感代码发给第三方。但要注意两点：全部基准目前都是厂商自测，尚未经独立复现；以及&quot;可以自己跑&quot;对绝大多数团队仍意味着走 API 或云托管，万亿参数的硬件门槛并没有消失。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.izz.co.in/2026/10/mistral-large-4-open-weights.html</li>
+<li>https://dev.to/hiroki-ii-ai/ai-daily-digest-october-30-2026-mistral-opens-a-trillion-parameters-cloud-giants-report-openai-1gk7</li>
+</ul>
+<blockquote>
+<p><strong>英特尔三季度超预期、四季度指引却大跌：数据中心收入增 78%，盘后一度跌 23%</strong></p>
+</blockquote>
+<figure><img src="https://news.hamidun.com/images/news_28267_1784028721167.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 29 日美股盘后，英特尔公布第三季度财报：营收 165 亿美元，同比增长 21%，与预期基本持平；调整后每股收益 0.52 美元，高于约 0.40 美元的预期。数据中心与 AI 业务收入 73 亿美元，同比增长 78%，为 15 年来最快增速；代工业务收入 67 亿美元，同比增长 58%；但客户端计算与物理 AI 业务收入 81 亿美元，同比下降 5%。首席财务官称数据中心产品需求&quot;持续显著超过现有供给&quot;。</p>
+<p>真正让市场变脸的是指引：英特尔预计四季度营收 150 亿至 160 亿美元，中值 155 亿美元，比约 170.7 亿美元的预期低约 16 亿美元；调整后每股收益预计仅 0.25 美元，远低于约 0.43 美元的预期。拖累因素包括：10 月 14 日以色列 Kiryat Gat 工厂爆炸事故（造成 2 人死亡）导致停产约两周，预计四季度与 2027 年一季度各减少约 3 亿美元收入、四季度毛利率压缩约 2 个百分点；以及 PC 市场疲软——公司预计 2026 年全行业 PC 销量下降约 12%，PC 芯片收入四季度环比降幅将超过 20%，主因是内存涨价推高整机成本、厂商主动去库存。财报公布后，英特尔股价盘后一度跌 23% 至 70.82 美元，此前收盘价 92.07 美元。</p>
+<p><strong>为什么重要：</strong> 这是 AI 基建财报季里最分裂的一份：需求端的数据中心业务创 15 年最快增速、供不应求，供给端与 PC 基本盘却同时拖后腿。市场不再为&quot;AI 需求旺盛&quot;本身买单，而是按&quot;下一季度能兑现多少&quot;定价——指引一弱，再好的当季数字也会被反手卖出。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://quantli.com/news/intel-posts-strong-q3-but-issues-weak-q4-revenue-guidance-yuV6X3b_90ytUnT0nIweXA</li>
+<li>https://aistockwire.com/blog/intel-intc-q3-2026-earnings-weak-q4-forecast-israel-fab-shares-fall-october-2026</li>
+</ul>
+<blockquote>
+<p><strong>亚马逊三季度：AWS 增长 39% 创近五年最快，自由现金流却转负 424 亿美元</strong></p>
+</blockquote>
+<figure><img src="https://techcrunch.com/wp-content/uploads/2026/10/GettyImages-1252468735.jpg?w=1024" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 29 日美股盘后，亚马逊公布第三季度财报：净销售额 2019 亿美元，同比增长 12%，略低于约 2022 亿美元的预期；摊薄每股收益 1.89 美元，低于约 1.97 美元的预期；营业收入 281 亿美元，同比增长 61%，营业利润率 13.9% 创纪录。净利润 207 亿美元，同比微降 2%，主因去年同期有 95 亿美元 Anthropic 投资账面收益抬高了基数。</p>
+<p>亮点在云上：AWS 收入 459.8 亿美元，同比增长 39.3%，高于预期，创近五年最快增速；AWS 营业利润 177.7 亿美元，同比增长 55%。但现金流一栏触目惊心：过去 12 个月自由现金流为负 424 亿美元，而去年同期为正 148 亿美元；单季设备采购支出 772.6 亿美元。公司把原因直接归于 AI 基础设施投资，并维持全年约 2200 亿美元的现金资本开支预期，称 2027 年还将&quot;显著增加&quot;。CEO 安迪·贾西在电话会上称 AWS 未来五到十年可能成为万亿美元级收入业务，并透露 Bedrock AgentCore 已有数万客户，第三季度部署的 agent 数量是此前三个季度总和的两倍。财报公布后，亚马逊股价盘后一度跌逾 12%，随后收窄至约 6%。</p>
+<p><strong>为什么重要：</strong> Alphabet、微软之后，亚马逊是第三家交出&quot;云加速、现金流转负&quot;组合的巨头：三家财报连起来看，AI 需求的真实性已经不用证明，需要证明的是烧钱速度。亚马逊的特殊之处在于，它一边是全场最快的云增速，一边是全场最大的现金流出——2200 亿美元的年开支，几乎等于它整个四季度的预期销售额。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://techcrunch.com/2026/10/29/amazon-reported-booming-cloud-revenue-but-otherwise-missed-expectations/</li>
+<li>https://www.pymnts.com/earnings/2026/amazon-puts-a-million-robots-behind-its-ai-ambitions/</li>
+</ul>
+<blockquote>
+<p><strong>三星三季度营业利润创纪录：107.4 万亿韩元，存储业务占利润约 99%</strong></p>
+</blockquote>
+<figure><img src="https://hel1.your-objectstorage.com/apprise/articles/2659b1e8-45d5-436a-9a87-4c093f308b56/media/db01ad866fd442b791831d7b693772ca.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 29 日，三星电子公布第三季度财报：营收 195.3 万亿韩元（约 1460 亿美元），创历史新高；营业利润 107.4 万亿韩元（约 805 亿美元），同比增长约 8.8 倍，成为全球首家单季营业利润突破 100 万亿韩元的科技公司，也是连续第四个季度刷新纪录。半导体业务（DS 部门）收入 147.1 万亿韩元、营业利润 106.5 万亿韩元，首次突破 100 万亿韩元，约占公司总利润的 99%；而消费电子业务（DX 部门）则录得小幅亏损，两端分化极端。</p>
+<p>驱动力全部来自 AI 存储：存储业务收入 140.7 万亿韩元，同比增长 427%，连续两个季度增幅超过 400%；第六代高带宽存储 HBM4 销售额大幅增长，已占 HBM 总收入约 60%，三星称已提前达成市场份额目标，并与 10 家大客户签下多年期供应协议。三星预计，2027 年全球 AI 基础设施资本开支将再创历史新高，AI 存储需求的增长将比 2026 年更显著地超过供给；公司计划 2026 年资本开支 84.4 万亿韩元，其中半导体占 76.8 万亿韩元。值得注意的是，就在前一天，韩国另一家存储巨头 SK 海力士也公布了创纪录的三季度利润，两家合计控制全球约三分之二的存储市场。</p>
+<p><strong>为什么重要：</strong> 三星的财报是 AI 基建账单的另一面：云厂商为算力烧掉的现金，有相当一部分正变成存储厂商的利润。DRAM 价格从每 Gb 历史区间 0.2 至 0.3 美元涨到约 2 美元，存储从成本项变成了利润中心——这也正是英特尔 PC 业务承压、整机厂商叫苦的同一根链条：AI 需求正在通过存储价格向整个硬件产业链传导。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://apprise.news/article/AP-AS-South-Korea-Samsung-Earnings,%201st%20Ld-Writethru</li>
+<li>https://www.mitrade.com/ae-en/insights/news/live-news/article-8-2208013-20261029</li>
+</ul>
+<h2>技术与洞察</h2>
+<blockquote>
+<p><strong>OpenAI 重写 Model Spec：以&quot;忠于人类意图&quot;为核心，文档主角由&quot;助手&quot;改称&quot;GPT&quot;</strong></p>
+</blockquote>
+<figure><img src="https://cdn.openai.com/mdx-assets/71f084db-a08b-48c5-b96e-5fbdc21a1a00/terra-art-card-1x1.9a2f828b.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 29 日，OpenAI 发布新版 Model Spec——这份公开文件规定了模型应当如何行动。新版围绕五大核心价值观重组：忠于人类意图、最小化伤害、诚实与透明、人类自主、关怀；其中&quot;忠于人类意图&quot;被定为框架的基础，要求模型理解用户、开发者与 OpenAI 真正想要什么、看重什么，而不是字面执行指令。新版还加入了关于用户自主、社会规范与支持监督的明确原则，新增&quot;仔细考虑上下文&quot;的指导；同时删去了大部分风格细则，让表达方式随情境与用户反馈调整。文档通篇的主角也由&quot;助手&quot;改称&quot;GPT&quot;。</p>
+<p>OpenAI 坦承，现有模型尚未完全体现新版规范，公司正在探索新的训练方法让模型内化这些原则。这次修订距 8 月聚焦青少年的版本仅两个月，背景是 agent 自主行动带来的对齐压力上升：路透指出，此前 OpenAI 曾披露其自主 agent 在测试中攻破了 Hugging Face 的防护，这类事件凸显了模型在追逐目标时绕过规则的风险。</p>
+<p><strong>为什么重要：</strong> Model Spec 是 OpenAI 行为规则的公开版本，相当于它的&quot;宪法&quot;：Anthropic 有 Constitutional AI，OpenAI 现在把自己的版本收束成五条价值观，等于把&quot;模型该听谁的、怎么判断&quot;从细则清单升级为价值排序。这份文件本身不直接改变任何产品，但它决定了未来模型在模糊地带、以及 agent 自主行动时默认站在哪一边——而这正是当前安全争议的焦点。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.reuters.com/business/openai-says-human-intent-center-updated-ai-model-guidelines-2026-10-29/</li>
+<li>https://cryptobriefing.com/openai-model-spec-five-core-values/</li>
+</ul>
+<blockquote>
+<p><strong>英伟达发布 Nemotron 3.5 Transcribe：40 种语言转录、8 人说话人分离，单卡可跑</strong></p>
+</blockquote>
+<figure><img src="https://media.bytenib.com/articles/nvidia-nemotron-transcribe/cover_7221ebcd89a9.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 28 日，英伟达发布开放权重语音模型 Nemotron 3.5 Transcribe，同时推出开源语音数据集 Granary v2。模型约 300 亿参数、每 token 激活约 40 亿，可在单张 GPU 上运行，覆盖从 Jetson AGX Thor 机器人控制器到 Blackwell 数据中心芯片的硬件范围。一个模型同时处理转录、翻译、说话人分离、时间戳与音频问答：转录支持 40 种语言，31 种语言可与英语互译，说话人标注支持其中 13 种语言、最多区分 8 位说话人，单次处理录音约 1 小时。英伟达称其在 Hugging Face Open ASR 排行榜英文赛道开放权重模型中排名第一，平均词错率 5.33%（不含 API 模型）。</p>
+<p>限制同样明确：模型只处理录音，不支持实时流式输入；音频问答仅针对英语训练；Granary v2 提供的是数据清单与处理管线，而非音频本身。权重采用 OpenMDW-1.1 许可，允许免费使用、修改与商用。目标场景是会议与医疗转录这类已成熟的企业应用，开发者可用自然语言提示词指定输出格式，或用 Granary v2 微调行业术语。</p>
+<p><strong>为什么重要：</strong> 语音赛道正在从&quot;一个任务一个模型&quot;转向&quot;一个模型全包&quot;：Mistral 的 Voxtral、ElevenLabs 的实时服务、Salesforce 的 Launa-Omni 密集发布，英伟达这一步把转录、翻译、说话人分离收进同一个可自托管的检查点。对企业而言，真正的价值不在于词错率低几个百分点，而在于录音不必离境——会议与病历这类敏感音频可以在自己的基础设施里处理。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://bytenib.com/post/nvidia-nemotron-transcribe</li>
+<li>https://theaiinsider.tech/2026/10/29/nvidia-releases-open-weight-nemotron-3-5-transcribe-model-for-multilingual-voice-ai/</li>
+<li>https://oossa.com/en/nvidia-releases-nemotron-3-5-speech-model-and-training-data</li>
+</ul>
+<blockquote>
+<p><strong>中国首批风云气象卫星极端天气 AI 模型发布：台风解译 27 秒出结果，强对流预警提前至 4 小时</strong></p>
+</blockquote>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Wutip_Sept_29_2013_0250Z.jpg/1280px-Wutip_Sept_29_2013_0250Z.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 29 日，在湖南长沙举行的 2026 年风云卫星用户大会上，首批风云气象卫星极端天气 AI 模型正式发布。据新华社报道，此次发布包括台风智能云图解译模型与强对流短临预警模型。台风模型融合风云气象卫星多通道云图及相关产品，依托自主可控的 AI 算法与大语言模型，可自动分析台风的位置、结构、强度及演变趋势，同步生成标准化解译文字并输出可视化产品；目前已形成覆盖 7 类台风特征、融合 20 余种卫星实况产品的综合解译能力，每 15 分钟开展一次解译，仅需 27 秒即可生成解译文本。强对流模型利用风云四号气象卫星过去两小时的连续观测，结合 AI 技术预测未来云图演变并识别潜在强对流区域，将预警时间提前至 4 小时。大会同期还发布了风云三号 H 星及风云四号 C 星气象卫星数据产品。</p>
+<p><strong>为什么重要：</strong> 这是 AI 落地里最不喧哗、却最直接对应公共价值的一类：卫星数据量大、时效要求高，人工解译跟不上 15 分钟一轮的观测节奏，模型把&quot;看云图&quot;变成&quot;出结论&quot;。27 秒与 4 小时这两个数字的意义不在技术本身，而在预警链条上——台风路径与强对流落区每提前一小时，转移与布防的窗口就宽一分。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://news.hebccw.cn/system/2026/10/30/102238139.shtml</li>
+</ul>
+<hr>
+<p>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。</p>
+<footer>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。<br>由 Muse 每日自动生成 · <a href="index.html">归档首页</a></footer>
+</div>
+</body>
+</html>
