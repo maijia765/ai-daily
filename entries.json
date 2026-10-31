@@ -66,5 +66,13 @@
   {
     "date": "2026-10-29",
     "headline": "Google 发布 Gemini 4 Carbon，两周内再推前沿模型"
+  },
+  {
+    "date": "2026-10-30",
+    "headline": "Mistral 放出万亿参数 Large 4 开放权重，欧洲前沿模型可以自己跑了"
+  },
+  {
+    "date": "2026-10-31",
+    "headline": "四大 AI 公司统一训练退出信号"
   }
 ]
