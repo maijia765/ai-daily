@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 早报 2026-11-02：四巨头统一 AI 训练退出信号</title>
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; line-height: 1.75; background: #fafafa; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) { body { background: #121212; color: #e8e8e8; } }
+.wrap { max-width: 780px; margin: 0 auto; padding: 24px 20px 64px; }
+.topbar { max-width: 780px; margin: 0 auto; padding: 16px 20px 0; }
+.topbar a { color: #888; text-decoration: none; font-size: 14px; }
+.topbar a:hover { text-decoration: underline; }
+h1 { font-size: 26px; line-height: 1.4; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e0e0e0; }
+@media (prefers-color-scheme: dark) { h2 { border-bottom-color: #333; } }
+.meta { color: #888; font-size: 14px; margin-bottom: 8px; }
+blockquote { margin: 20px 0 8px; padding: 12px 16px; border-left: 4px solid #2563eb; background: #eef4ff; border-radius: 0 8px 8px 0; }
+@media (prefers-color-scheme: dark) { blockquote { background: #1a2333; } }
+blockquote p { margin: 0; font-weight: 600; }
+p { margin: 10px 0; }
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #2563eb; }
+figure { margin: 16px 0; }
+figure img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; display: block; background: #e8e8e8; }
+figcaption { font-size: 12px; color: #999; text-align: center; margin-top: 6px; }
+hr { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+@media (prefers-color-scheme: dark) { hr { border-top-color: #333; } }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+@media (prefers-color-scheme: dark) { footer { border-top-color: #333; } }
+.day-list { list-style: none; padding: 0; }
+.day-list li { margin: 0; padding: 16px 4px; border-bottom: 1px solid #e8e8e8; }
+@media (prefers-color-scheme: dark) { .day-list li { border-bottom-color: #2a2a2a; } }
+.day-list a { text-decoration: none; color: inherit; display: block; }
+.day-list a:hover .day-title { color: #2563eb; }
+.day-date { font-size: 13px; color: #999; }
+.day-title { font-size: 17px; font-weight: 600; margin-top: 2px; }
+.hero { margin: 24px 0 8px; }
+.hero p { color: #666; }
+@media (prefers-color-scheme: dark) { .hero p { color: #aaa; } }
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← 全部早报</a></div>
+<div class="wrap">
+<h1>AI 早报 2026-11-02：四巨头统一 AI 训练退出信号</h1>
+<p>今日概览 · 6 条</p>
+<h2>3 分钟速览</h2>
+<ol>
+<li><strong>四巨头统一 AI 训练退出信号</strong>：OpenAI、谷歌、微软与 Anthropic 将共用一个 robots.txt 训练退出标识，出版商写一次即可向四家同时说&quot;不&quot;。</li>
+<li><strong>OpenAI 融资目标据报道下调至 200 亿美元</strong>：目标从 300 亿美元下调，估值目标从 1.4 万亿美元降至 1.25 万亿美元，已获承诺约 110 亿美元。</li>
+<li><strong>DeepSeek 发布 Super-agent 架构探索</strong>：双层架构加事件驱动，让个人助手在多任务与团队协作规模上摆脱&quot;一人盯一屏&quot;的上限。</li>
+<li><strong>xAI 孟菲斯涡轮机诉讼驳回动议被否</strong>：联邦法官裁定 NAACP 的《清洁空气法》诉讼可以继续审理，驳回了&quot;移动源豁免&quot;等抗辩。</li>
+<li><strong>物理 AI 站上 A 股风口</strong>：万得物理 AI 概念指数半个月涨超 25%，机构对&quot;从 1 到 N&quot;的定价分歧仍大。</li>
+</ol>
+<h2>要闻</h2>
+<blockquote>
+<p><strong>四巨头统一 AI 训练退出信号：写一次 robots.txt，四家公司同时读懂&quot;不许拿去训练&quot;</strong></p>
+</blockquote>
+<figure><img src="https://vibe-marketing.org/blog/robots-txt-best-practices.webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 30 日，OpenAI、谷歌、微软与 Anthropic 宣布支持一个共用的 AI 训练退出信号：出版商在 robots.txt 里写上 <code>__usage_ai-training</code> 这一标识并配 Disallow 规则，即可一次性向四家公司表明&quot;不要把本站内容用于生成式模型训练&quot;。此前出版商必须逐家列出 GPTBot、Google-Extended、ClaudeBot 等爬虫名，漏掉一个名字就等于留一个缺口。该标识由 Anthropic 的 Kevin Kelley 提交给 IETF 的 AI Preferences 工作组，目前仍是个别提交的草案、并非正式标准，草案有效期至 2027 年 5 月 3 日。</p>
+<p>四家的时间表并不一致：Anthropic 表示已经开始实施；微软称自 2027 年 2 月 1 日起随 Bingbot 重新抓取而生效，并将同时停用 NoArchive 与 NoCache 作为训练信号的含义；谷歌的目标是 2027 年初；OpenAI 只说&quot;未来几个月&quot;。Meta 对统一信号表示支持，但未承诺实施这一标识。边界也要划清：该信号只针对未来的生成式训练，不阻止抓取本身、不删除已收集的数据、不涉及已训出的模型；谷歌与微软在&quot; grounding（作答时引用实时网页）&quot;上的处理还不一致，谷歌将其一并视为退出，微软则用单独的页面级 ai-grounding 标签处理。</p>
+<p><strong>为什么重要：</strong> 这是训练数据争夺从&quot;各自为政的爬虫名单&quot;走向&quot;按用途表态&quot;的第一步：对出版商而言，维护成本从一份不断变长的名单降为一行；对实验室而言，一个可被统计的拒绝信号让&quot;有多少内容明确说了不&quot;变成可度量的数字，进而影响授权谈判的筹码。但它仍是建立在 robots.txt 自愿遵守传统上的约定——不读文件的抓取者照样不读，真正的约束力来自声誉与后续的授权、诉讼博弈，而非技术本身。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://tech-insider.org/ai-training-opt-out-standard-openai-google-microsoft-anthropic-robots-txt-2026/</li>
+<li>https://genznewz.com/ai-giants-back-one-training-opt-out-for-publishers</li>
+<li>https://pivotnews.ai/five/google-microsoft-and-openai-say-they-will-honor-one-ai</li>
+</ul>
+<blockquote>
+<p><strong>OpenAI 融资目标据报道下调至 200 亿美元：估值目标同步降到 1.25 万亿美元，首关预计低于目标</strong></p>
+</blockquote>
+<figure><img src="https://www.pymnts.com/wp-content/uploads/2026/08/OpenAI-smart-speaker-1.jpg?w=620" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>据报道，OpenAI 已将其本轮融资目标从 300 亿美元下调至 200 亿美元，目标投后估值从 1.4 万亿美元降至 1.25 万亿美元。据《金融时报》10 月 30 日的报道，投资者须在上周五前确认出资，部分投资者缩减了认购规模；《华尔街日报》同日报道，已获承诺约 110 亿美元，不到最初目标的一半；CNBC 于 10 月 31 日证实了下调后的目标，并指出本轮尚未关闭、最终数字仍可能变化。OpenAI 未就上述报道置评。报道称，本轮由阿联酋投资者财团领投，MGX 等国家支持的技术基金在列，Coatue、Founders Fund、红杉与 a16z 等预计参与；OpenAI 还计划在未来几周向家族办公室与高净值个人开放认购，以补足至 200 亿美元。</p>
+<p>背景是 10 月 30 日当天纳指 100 指数下跌 3.5%，市场对 AI 资本开支回报的疑虑升温；同一周，Alphabet 在财报后单周股价下跌约 13%。而竞争对手 Anthropic 已于 10 月 26 日递交 IPO 文件，OpenAI 此前被报道将本轮定位为 IPO 之前的&quot;机会型&quot;过桥融资。</p>
+<p><strong>为什么重要：</strong> 数字本身不是终局——轮次未关闭，一切仍可变——但方向值得注意：这是本轮 AI 周期里第一次有头部实验室在公开报道中同时下调募资额与估值目标，且发生在 Anthropic 递表 IPO 的同一周。市场不再只问&quot;模型够不够强&quot;，开始问&quot;账单由谁、以什么成本买单&quot;；OpenAI 能否按 1.25 万亿美元完成首关，将成为检验一级市场对 AI 叙事定价的下一个 observable。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.pymnts.com/news/artificial-intelligence/2026/openai-cuts-funding-target-by-10-billion-as-investor-jitters-shake-ai-markets/</li>
+<li>https://www.tipranks.com/news/openai-slashes-funding-goal-by-10-billion-to-20-billion-as-ai-stock-selloff-intensifies</li>
+</ul>
+<h2>开发生态</h2>
+<blockquote>
+<p><strong>DeepSeek 发布 Super-agent 架构探索：双层架构加事件驱动，让助手从&quot;盯一屏&quot;走向&quot;管一摊事&quot;</strong></p>
+</blockquote>
+<figure><img src="https://assets.datacamp.com/production/repositories/7101/datasets/a5813b3d5cda21029a635d14f2c3091df1031938/confident_agent.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>10 月 31 日晚，DeepSeek Harness 团队在微信公众号发表技术文章《Super-agent 设计探索：迈向更自主的 Agent 系统》。文章指出，模型能力提升催生了个人助手（Personal Agent）的集中涌现：它们直接接入消息、日程、邮件与工作平台，持续观察信息流并协助处理事务。但现有主流 Agent 设计难以在多任务与团队协作的规模上支撑这一模式——多任务上限取决于人的注意力。DeepSeek 提出的解法包括双层架构、事件驱动、异步多信道交互、存算分离与外部 Watchdog：系统在底层接管繁琐的会话管理与上下文同步，人从具体的执行细节上移到更高层的决策与验收。</p>
+<p>值得注意的是，这套思路已有内部实例在持续运行：基于 Super-agent 构建的内部实例日常参与问题复现与修复、代码审查响应与 DeepSeek Harness 自身的迭代；当团队成员在群聊中反馈软件问题时，即使没有人主动 @AI，它也能识别潜在缺陷，在后台尝试复现问题、寻找修复方案。</p>
+<p><strong>为什么重要：</strong> 这篇文章的价值不在&quot;又一个 Agent 框架&quot;，而在它点出的瓶颈转移：当模型本身够用之后，Agent 的天花板从单任务能力变成了会话管理、上下文同步与&quot;何时不打扰人&quot;的工程问题。双层架构与外部 Watchdog 的思路，本质是把&quot;助手&quot;从对话前端拆成&quot;持续运行的后台同事&quot;——这正是个人助手能否从演示走向日常可用的分水岭；但内部实例的 anecdote 尚未经过外部复现，效果仍待独立验证。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.21jingji.com/article/20261101/herald/4715fc49cec2361f07cea207a93d4dc1.html</li>
+</ul>
+<h2>行业动态</h2>
+<blockquote>
+<p><strong>物理 AI 站上 A 股风口：概念指数半个月涨超 25%，但机构对&quot;从 1 到 N&quot;仍有分歧</strong></p>
+</blockquote>
+<figure><img src="https://doqvf81n9htmm.cloudfront.net/data/crop_article/187103/35_20260422113057.jpg_600x450.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>11 月 1 日，中国基金报采访六位投研人士解读 10 月下旬以来突然&quot;引爆&quot;的 A 股物理 AI 产业链：截至 10 月 30 日，万得物理 AI 概念指数自 10 月 15 日低点以来区间涨幅超 25%，同期万得人形机器人指数最大涨幅接近 20%；10 月 19 日至 23 日，人形机器人板块成交额达 4666.18 亿元，占万得全 A 的 5.92%，而前一周这一比例仅为 3.60%。受访者普遍将本轮行情归因于三重共振：模型端 GPT-6 Astra 证明通用基础模型可直接承担策略模型（抓取任务实机成功率 95%）、工具链端英伟达 GTC 推出开源全栈、载体端特斯拉 Optimus 在弗里蒙特工厂启动早期生产（最快 2027 年底产能爬坡到周产 2 万台）。据华尔街见闻同日报道，摩根大通已将宇树科技评级由&quot;低配&quot;直接上调两级至&quot;增持&quot;，并将 2027 年 12 月目标价从 300 元上调至 995 元；工信部数据显示，2026 年上半年我国人形机器人整机产量已超 4 万台，预计全年突破 10 万台。</p>
+<p>但受访者的分歧同样明确：多位人士强调，产业仍处&quot;从 0 到 1 末尾、从 1 到 10 前夕&quot;，定价逻辑正从&quot;交易样机&quot;切向&quot;交易数据闭环、量产爬坡&quot;，而非已经完成切换；最大的预期差在于市场容易把样机出货、小批量交付等同于商业化拐点，而真实约束是 B 端客户 ROI 尚未转正、复购订单稀缺，具身模型训练所需千万小时量级的数据与现有积累仍差一个数量级。</p>
+<p><strong>为什么重要：</strong> 物理 AI 的叙事正在接续算力叙事：当市场开始怀疑纯算力资本开支的回报时，&quot;能感知、会决策、可行动&quot;的实体智能提供了一个新的需求故事——算力、模型、终端、数据自循环。但这篇解读的警示比行情本身更值得留存：六位受访者几乎一致把&quot;订单、交付、复购&quot;列为验证标尺，这意味着未来几个季度的财报与交付数据，而不是下一场发布会，才是这波行情能否从情绪溢价转为产业投资的分界线。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.21jingji.com/article/20261101/herald/9a3610487660ae439b383693c3fff50a.html</li>
+<li>https://news.china.com/socialgd/10000169/20261101/49831732.html</li>
+</ul>
+<blockquote>
+<p><strong>xAI 孟菲斯涡轮机诉讼驳回动议被否：法官裁定 NAACP 的《清洁空气法》诉讼可以继续</strong></p>
+</blockquote>
+<figure><img src="https://www.engadget.com/img/gallery/judge-says-xai-must-face-naacp-lawsuit-on-data-center-pollution/intro-1793560530.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>美国密西西比北区联邦地区法院法官 Debra M. Brown 于 10 月 30 日作出裁决、11 月 1 日经 CNBC 等报道，驳回了 xAI（现归 SpaceX 旗下 AI 部门 SpaceXAI）要求撤销 NAACP 诉讼的动议，案件将进入实质审理。NAACP 于 2026 年 4 月提起诉讼，指控 xAI 在孟菲斯附近 Southaven 的数据中心园区安装并运行燃气涡轮机而未取得必要的建设与运营空气许可；诉状称 2025 年 8 月至 12 月间安装了 27 台涡轮机，南方环境法中心则称至少 35 台燃烧涡轮机在未获许可的情况下运行。xAI 抗辩称涡轮机属于可豁免的&quot;移动源&quot;且原告缺乏起诉资格，法官逐一驳回：涡轮机在密西西比州实施计划下不属于&quot;移动源&quot;，原告依据《清洁空气法》享有起诉资格。法院此前约两周还驳回了司法部要求终结此案的请求；下一步待决的是 NAACP 申请的初步禁令，法院尚未就此作出裁决，也未下令关闭涡轮机。</p>
+<p>需要强调的是，这只是程序性裁决：法官裁定的是&quot;诉求可以继续审理&quot;，而非认定 xAI 违反了法律。公司方面表示，长期电厂将使用 41 台涡轮机，并已于 2026 年 3 月取得该设施的《清洁空气法》许可；临时机组按既定时间表将于 2027 年 7 月前撤离 Southaven。</p>
+<p><strong>为什么重要：</strong> 这是 AI 数据中心扩张第一次在&quot;程序关&quot;上输给环保诉讼：当算力建设的瓶颈从芯片转向电力与许可时，&quot;移动源豁免&quot;这类技术性抗辩能否成立，直接决定了临时燃气发电这种抢电模式的成本与时间表。更广的信号是，数据中心选址之争正在从社区抗议升级为可进入实质审理的联邦诉讼——而初步禁令的裁决，才是真正会改变电厂运转方式的那一步。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.engadget.com/2303462/judge-says-xai-must-face-naacp-lawsuit-on-data-center-pollution/</li>
+<li>https://tech-insider.org/spacex-loses-bid-dismiss-clean-air-act-suit-27-turbines-2026/</li>
+</ul>
+<blockquote>
+<p><strong>印度 TRAI 发布电信 AI 草案：运营商须为自家 AI 结果负责，哪怕是外包系统</strong></p>
+</blockquote>
+<figure><img src="https://telecomlead.com/wp-content/uploads/2020/02/Telstra-broadband.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>印度电信监管局（TRAI）于 10 月 30 日发布《电信网络与服务中负责任使用 AI 的指南》草案，11 月 1 日起陆续见诸报道，征求意见至 11 月 27 日。草案要求持牌电信运营商制定经董事会批准的内部 AI 政策、设立 AI 治理与安全委员会、将所用 AI 系统按高、中、低三级分类，并建立全部在用、停用与退役系统的清单；AI 相关事件按严重、高度、中度、低度四级分类，其中严重与高度事件须按规定格式与时限上报 TRAI，政策文件及其修订须在生效后 7 个工作日内报备。最 sharp 的一条是问责条款：运营商须为其使用的所有 AI 系统的结果负责，&quot;无论系统是内部开发、外包采购还是两者结合&quot;。</p>
+<p>草案覆盖 Reliance Jio、Bharti Airtel、Vodafone Idea 与 BSNL 等运营商，适用场景包括 5G 网络管理、客服、反欺诈、预测性维护与自动化业务运营。但也有前 TRAI 顾问指出，该文件更接近&quot;指导性意见&quot;而非强制性指令，属于轻触式监管；且草案本身尚未生效，最终形态取决于 11 月 27 日前的反馈。</p>
+<p><strong>为什么重要：</strong> 这份草案把 AI 治理的责任锚点从&quot;谁开发模型&quot;移到了&quot;谁把系统用在关键基础设施上&quot;：运营商不能再以&quot;供应商提供的&quot;作为挡箭牌。这对全球电信与关键基础设施监管是个可参照的模板——一旦&quot;使用者担责&quot;成为惯例，采购合同里的文档、测试与可解释性条款就会从加分项变成必选项；但草案的约束力争议也提醒，名字叫&quot;指南&quot;的文件，最终效力取决于它会不会被写进牌照条件。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://telecomlead.com/4g-lte/trai-proposes-ai-guidelines-for-telecom-operators-jio-airtel-vodafone-idea-and-bsnl-face-new-governance-requirements-128471</li>
+<li>https://pivotnews.ai/five/trai-draft-would-make-telcos-own-outcomes-of-vendor-built</li>
+</ul>
+<hr>
+<p>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。</p>
+<footer>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。<br>由 Muse 每日自动生成 · <a href="index.html">归档首页</a></footer>
+</div>
+</body>
+</html>
