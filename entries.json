@@ -1,90 +1,94 @@
 [
   {
-    "date": "2026-10-13",
-    "headline": "DeepSeek 二轮融资增至约千亿元"
+    "date": "2026-11-04",
+    "headline": "Anthropic 修订招股书：三季度收入 170 亿美元，算力承诺逼近 9000 亿美元"
   },
   {
-    "date": "2026-10-14",
-    "headline": "OpenAI 员工装窃听器被捕，FBI 介入调查"
-  },
-  {
-    "date": "2026-10-15",
-    "headline": "美芯片股暴跌，市值蒸发 1.6 万亿美元"
-  },
-  {
-    "date": "2026-10-16",
-    "headline": "FTC 向 OpenAI 与 Anthropic 发出民事传票，调查 AI 安全事件"
-  },
-  {
-    "date": "2026-10-17",
-    "headline": "库克确认 Apple Intelligence 国行版 10 月底发布测试版，接入阿里千问"
-  },
-  {
-    "date": "2026-10-18",
-    "headline": "DeepSeek 发布 V4.1-Flash-1017，首次开放自研搜索 API"
-  },
-  {
-    "date": "2026-10-19",
-    "headline": "Anthropic 拿出 5% 股权成立公益基金，IPO 前夜的信任赎回券"
-  },
-  {
-    "date": "2026-10-20",
-    "headline": "Anthropic 被曝开发\"读心\"新模型，能猜中你没说出口的需求"
-  },
-  {
-    "date": "2026-10-21",
-    "headline": "美国公开联邦机构移除 DeepSeek 命令，中国商务部要求\"立即纠正\""
-  },
-  {
-    "date": "2026-10-22",
-    "headline": "Anthropic 发布主动式智能体 Claude Duet，对标 Meta Muse 与 OpenAI Dots"
-  },
-  {
-    "date": "2026-10-23",
-    "headline": "据报道 DeepSeek 完成约 1000 亿元巨额融资，腾讯、宁德时代领投"
-  },
-  {
-    "date": "2026-10-24",
-    "headline": "月之暗面发布 Kimi K3.1 Pro，11 月 4 日前开放权重"
-  },
-  {
-    "date": "2026-10-25",
-    "headline": "AWS 开源 Infinity 智能体运行时，8GB 内存跑 7.5 万个 agent"
-  },
-  {
-    "date": "2026-10-26",
-    "headline": "OpenAI 降价挖走 Anthropic 大客户，Replit、Rippling 倒戈"
-  },
-  {
-    "date": "2026-10-27",
-    "headline": "Anthropic 公开 S-1 冲刺史上最大 IPO，半年收入 163 亿美元"
-  },
-  {
-    "date": "2026-10-28",
-    "headline": "OpenAI 与 Anthropic 同日宣称 AI 证伪指数时间假设"
-  },
-  {
-    "date": "2026-10-29",
-    "headline": "Google 发布 Gemini 4 Carbon，两周内再推前沿模型"
-  },
-  {
-    "date": "2026-10-30",
-    "headline": "Mistral 放出万亿参数 Large 4 开放权重，欧洲前沿模型可以自己跑了"
-  },
-  {
-    "date": "2026-10-31",
-    "headline": "四大 AI 公司统一训练退出信号"
-  },
-  {
-    "date": "2026-11-01",
-    "headline": "苹果国行 AI 12 月上线，接入阿里千问"
+    "date": "2026-11-03",
+    "headline": "最强 AI 智能体也只完成 12% 的专家任务"
   },
   {
     "date": "2026-11-02",
     "headline": "四巨头统一 AI 训练退出信号"
   },
   {
-    "date": "2026-11-03",
-    "headline": "最强 AI 智能体也只完成 12% 的专家任务"
+    "date": "2026-11-01",
+    "headline": "苹果国行 AI 12 月上线，接入阿里千问"
+  },
+  {
+    "date": "2026-10-31",
+    "headline": "四大 AI 公司统一训练退出信号"
+  },
+  {
+    "date": "2026-10-30",
+    "headline": "Mistral 放出万亿参数 Large 4 开放权重，欧洲前沿模型可以自己跑了"
+  },
+  {
+    "date": "2026-10-29",
+    "headline": "Google 发布 Gemini 4 Carbon，两周内再推前沿模型"
+  },
+  {
+    "date": "2026-10-28",
+    "headline": "OpenAI 与 Anthropic 同日宣称 AI 证伪指数时间假设"
+  },
+  {
+    "date": "2026-10-27",
+    "headline": "Anthropic 公开 S-1 冲刺史上最大 IPO，半年收入 163 亿美元"
+  },
+  {
+    "date": "2026-10-26",
+    "headline": "OpenAI 降价挖走 Anthropic 大客户，Replit、Rippling 倒戈"
+  },
+  {
+    "date": "2026-10-25",
+    "headline": "AWS 开源 Infinity 智能体运行时，8GB 内存跑 7.5 万个 agent"
+  },
+  {
+    "date": "2026-10-24",
+    "headline": "月之暗面发布 Kimi K3.1 Pro，11 月 4 日前开放权重"
+  },
+  {
+    "date": "2026-10-23",
+    "headline": "据报道 DeepSeek 完成约 1000 亿元巨额融资，腾讯、宁德时代领投"
+  },
+  {
+    "date": "2026-10-22",
+    "headline": "Anthropic 发布主动式智能体 Claude Duet，对标 Meta Muse 与 OpenAI Dots"
+  },
+  {
+    "date": "2026-10-21",
+    "headline": "美国公开联邦机构移除 DeepSeek 命令，中国商务部要求\"立即纠正\""
+  },
+  {
+    "date": "2026-10-20",
+    "headline": "Anthropic 被曝开发\"读心\"新模型，能猜中你没说出口的需求"
+  },
+  {
+    "date": "2026-10-19",
+    "headline": "Anthropic 拿出 5% 股权成立公益基金，IPO 前夜的信任赎回券"
+  },
+  {
+    "date": "2026-10-18",
+    "headline": "DeepSeek 发布 V4.1-Flash-1017，首次开放自研搜索 API"
+  },
+  {
+    "date": "2026-10-17",
+    "headline": "库克确认 Apple Intelligence 国行版 10 月底发布测试版，接入阿里千问"
+  },
+  {
+    "date": "2026-10-16",
+    "headline": "FTC 向 OpenAI 与 Anthropic 发出民事传票，调查 AI 安全事件"
+  },
+  {
+    "date": "2026-10-15",
+    "headline": "美芯片股暴跌，市值蒸发 1.6 万亿美元"
+  },
+  {
+    "date": "2026-10-14",
+    "headline": "OpenAI 员工装窃听器被捕，FBI 介入调查"
+  },
+  {
+    "date": "2026-10-13",
+    "headline": "DeepSeek 二轮融资增至约千亿元"
   }
 ]
