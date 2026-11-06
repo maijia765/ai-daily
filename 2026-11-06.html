@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 早报 2026-11-06：OpenAI 发布 GPT-6 Cyber，AI 芯片股单日暴跌</title>
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; line-height: 1.75; background: #fafafa; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) { body { background: #121212; color: #e8e8e8; } }
+.wrap { max-width: 780px; margin: 0 auto; padding: 24px 20px 64px; }
+.topbar { max-width: 780px; margin: 0 auto; padding: 16px 20px 0; }
+.topbar a { color: #888; text-decoration: none; font-size: 14px; }
+.topbar a:hover { text-decoration: underline; }
+h1 { font-size: 26px; line-height: 1.4; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e0e0e0; }
+@media (prefers-color-scheme: dark) { h2 { border-bottom-color: #333; } }
+.meta { color: #888; font-size: 14px; margin-bottom: 8px; }
+blockquote { margin: 20px 0 8px; padding: 12px 16px; border-left: 4px solid #2563eb; background: #eef4ff; border-radius: 0 8px 8px 0; }
+@media (prefers-color-scheme: dark) { blockquote { background: #1a2333; } }
+blockquote p { margin: 0; font-weight: 600; }
+p { margin: 10px 0; }
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #2563eb; }
+figure { margin: 16px 0; }
+figure img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; display: block; background: #e8e8e8; }
+figcaption { font-size: 12px; color: #999; text-align: center; margin-top: 6px; }
+hr { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+@media (prefers-color-scheme: dark) { hr { border-top-color: #333; } }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+@media (prefers-color-scheme: dark) { footer { border-top-color: #333; } }
+.day-list { list-style: none; padding: 0; }
+.day-list li { margin: 0; padding: 16px 4px; border-bottom: 1px solid #e8e8e8; }
+@media (prefers-color-scheme: dark) { .day-list li { border-bottom-color: #2a2a2a; } }
+.day-list a { text-decoration: none; color: inherit; display: block; }
+.day-list a:hover .day-title { color: #2563eb; }
+.day-date { font-size: 13px; color: #999; }
+.day-title { font-size: 17px; font-weight: 600; margin-top: 2px; }
+.hero { margin: 24px 0 8px; }
+.hero p { color: #666; }
+@media (prefers-color-scheme: dark) { .hero p { color: #aaa; } }
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← 全部早报</a></div>
+<div class="wrap">
+<h1>AI 早报 2026-11-06：OpenAI 发布 GPT-6 Cyber，AI 芯片股单日暴跌</h1>
+<p>今日概览 · 6 条</p>
+<h2>3 分钟速览</h2>
+<ol>
+<li><strong>OpenAI 发布 GPT-6 Cyber</strong>：GPT-6 Astra 的网络安全专用版本，ExploitGym 得分 48.5%，为 948 个 Linux 内核漏洞开发出可用的提权 exploit，仅限审核通过的 Daybreak Red 客户使用。</li>
+<li><strong>美股 AI 芯片股遭遇历史级抛售</strong>：纳指跌 5.52%，创 19 个月最大单日跌幅；英伟达跌 9.3%，AMD 跌 17.3%，费城半导体指数跌 12%，标普 500 市值单日蒸发约 3 万亿美元。</li>
+<li><strong>Anthropic 在 Claude 中推出 Personal Finance</strong>：美国 Beta，可通过 Plaid 只读连接银行账户查余额与消费，Pro、Max、Ultra 订阅者逐步获得，比 ChatGPT 的同类功能晚了约半年。</li>
+<li><strong>Google 发布 Gemini Omni 1.2 Flash</strong>：视频生成正式 GA，原生片段延长至 15 秒，720p 价格降 30% 至每秒 0.07 美元。</li>
+<li><strong>月之暗面放出 Kimi K3.1 Pro 完整权重</strong>：2.8T 参数 MoE 模型上线 Hugging Face，在 Agent Arena 榜单上居开源模型第一、全部模型第 13 位。</li>
+</ol>
+<h2>要闻</h2>
+<blockquote>
+<p><strong>OpenAI 发布 GPT-6 Cyber：网络安全能力评级升至 Critical，948 个 Linux 内核漏洞已有可用 exploit</strong></p>
+</blockquote>
+<figure><img src="https://images.ctfassets.net/kftzwdyauwt9/1AiFc9sQFyo6YguQtfjHHN/3ac0a37435e1dfd2b532eaefe26b18bb/gpt-6-cyber-cover.png?w=3840&q=90&fm=webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>11 月 5 日，OpenAI 在官网发布 GPT-6 Cyber——GPT-6 Astra 的网络安全专用版本，专为在授权范围内发现漏洞、开发可用的 exploit 并提出修复方案而训练。在 ExploitGym 基准上，GPT-6 Cyber 得分 48.5%，高于 GPT-5.6 Cyber 的 32.1%（相对提升 51%）和 GPT-6 Astra 的 42.4%；在无部署安全提示的情况下，它在 99.93% 的越权诱捕测试中没有触碰任务范围之外的服务，高于 GPT-5.6 Cyber 的 94.49%，有提示时为 100%。实战层面，模型复现了 1,724 个 Linux 内核漏洞并为其中 948 个开发出可用的本地提权 exploit（同一工具链下 GPT-5.6 Sol 只做到 166 个），还发现了 81 个此前未知的 Firefox 高危漏洞，Mozilla 已开始修复其中许多，并向 Linux 维护者披露了 304 个关键发现及候选补丁。OpenAI 将其在 Preparedness Framework 下的网络安全评级定为 Critical（最高级），高于 GPT-5.6 Cyber 的 High。</p>
+<p>准入控制与能力同步收紧：GPT-6 Cyber 初期只通过 API 与 Codex 提供给一小批审核通过的 Daybreak Red 客户，API 默认要求 IP 白名单，数周内扩大到全部 Red 客户；同时 GPT-5.6 Cyber 向全部 Red 客户开放，Daybreak Blue 的 GPT-6 Astra 内测范围扩大，并新增面向关键基础设施防御者的 Daybreak Red 分组，10 亿美元的 Daybreak for Frontline Defenders 资助计划为资源有限的防御团队补贴准入。思科、Calif 与 CodeRabbit 已在用它做漏洞研究与代码审查。</p>
+<p><strong>为什么重要：</strong> 这是第一款被官方定为 Critical 级网络安全能力的模型，标志着&quot;找漏洞、写 exploit、给补丁&quot;的整条链路第一次被做成一个正式产品，而不是实验室演示。OpenAI 的取舍也很直白：能力越强，围栏越高——只给验明身份的防御方，普通用户碰不到。对安全行业来说，真正的分水岭不是 948 这个数字，而是&quot;AI 找漏洞&quot;从此有了可采购、可审计的供给方；对其他人来说，需要盯的是这套能力会不会外溢到围栏之外。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://openai.com/index/introducing-gpt-6-cyber/</li>
+<li>https://www.unite.ai/openai-launches-gpt-6-cyber-with-restricted-access-and-scope-controls/</li>
+<li>https://mlq.ai/news/openai-releases-gpt-6-cyber-after-model-finds-948-linux-kernel-exploits/</li>
+</ul>
+<blockquote>
+<p><strong>Anthropic 在 Claude 中推出 Personal Finance：只读银行账户，晚 ChatGPT 约半年</strong></p>
+</blockquote>
+<figure><img src="https://www.unite.ai/wp-content/uploads/2026/11/anthropic-introduces-read-only-personal-finance-beta-in-claude.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>11 月 5 日，Anthropic 宣布在 Claude 中推出 Personal Finance 功能，美国 Beta 本周起向 Pro、Max 与 Ultra 订阅者逐步开放。用户通过 Plaid 连接银行与信用卡账户（最多 16 个银行链接），用自然语言向 Claude 询问余额、消费去向与账单，Claude 可读取账户名、类型、后四位、余额与信用额度，以及最长 24 个月的交易记录；投资、贷款与信用卡账户只读余额和额度，不读持仓、交易、利率或贷款条款。权限严格只读：Claude 不能转账、付账、取消订阅或进行任何投资操作，也不会看到银行密码；功能无广告、无赞助推荐，Anthropic 也不借此推销自家的信用卡、贷款或储蓄产品，且明确表示不提供投资建议。Anthropic 同时在公告中提醒，Claude 可能算错数字，用户应核对数字背后的交易明细、与银行确认重要数字；余额可能滞后一两天，同一账户经不同登录方式连接时可能被重复计算。</p>
+<p>这是聊天机器人接管&quot;记账&quot;这一场景的又一步，但 Anthropic 是后来者：Perplexity 的 Plaid 财务集成于 4 月 9 日上线，ChatGPT Finances 于 5 月 15 日上线，同样走 Plaid，Claude 比 ChatGPT 晚了约半年。范围也收得很窄：仅限美国，仅限个人付费档，Free、Team 与 Enterprise 均不在内，海外上线时间未定。</p>
+<p><strong>为什么重要：</strong> 对 Anthropic 而言，这不是一个新功能，而是一次信任考试：银行交易记录是用户交给聊天机器人最敏感的数据之一，只读、无广告、不卖金融产品这三条边界划得越清楚，用户才越可能真的连上。对行业来说，三家主流助手半年内相继接上同一条 Plaid 管道，说明&quot;读账单、答问题&quot;已经成了聊天机器人的标准配置，竞争点不再是谁先做，而是谁的数字算得准、边界守得住。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.reuters.com/business/anthropic-rolls-out-personal-finance-feature-claude-2026-11-05/</li>
+<li>https://www.unite.ai/anthropic-introduces-read-only-personal-finance-beta-in-claude/</li>
+</ul>
+<blockquote>
+<p><strong>Google 发布 Gemini Omni 1.2 Flash：视频生成正式 GA，片段延长至 15 秒、降价 30%</strong></p>
+</blockquote>
+<figure><img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/gemini-omni-1.2_FZLql41.width-1300.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>11 月 5 日，Google 在官方博客宣布 Gemini Omni 1.2 Flash 正式发布（GA），面向 Gemini API 与 Gemini for business 推出，这是 Gemini Omni 系列首次进入正式可用状态。新版把原生视频生成与编辑的时长上限从 10 秒延长至 15 秒，可按 1 秒步进在 3 至 15 秒之间指定时长，新增多轮对话式编辑与更强的参考素材跟随能力；720p 输出价格下调 30% 至每秒 0.07 美元（1.1 版约为每秒 0.10 美元），一段 15 秒的 720p 视频输出成本约 1.04 美元，支持先以 360p 或 720p 起草、再升频至 1080p 或 4K。Google 同时宣布，12 月 3 日起，对旧版 Gemini Omni 1.1 的 API 请求将自动转到 1.2 并按新价格计费。新模型通过 Gemini API、Google Cloud、Flow、Google Vids、Gemini for business 与 Gemini 应用提供，其中 Gemini 应用内的 15 秒片段先向 Google AI Ultra 订阅者逐步开放，所有输出均带 SynthID 水印。</p>
+<p><strong>为什么重要：</strong> 视频生成正在从&quot;演示级&quot;变成&quot;可采购的生产工具&quot;：GA 意味着 Google 愿意为它背书服务等级与企业级安全，而 15 秒与多轮编辑解决的是实际工作流里的两个痛点——片段太短讲不完一个镜头，改一处细节就得整段重渲。降价 30% 的信号同样直接：视频模型的价格战已经从&quot;每张图多少钱&quot;打到了&quot;每秒视频多少钱&quot;，对开发者来说，选型时单价与可编辑性正在变得和画质本身一样重要。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/</li>
+<li>https://www.unite.ai/googles-gemini-omni-1-2-flash-reaches-general-availability/</li>
+</ul>
+<blockquote>
+<p><strong>月之暗面放出 Kimi K3.1 Pro 完整权重：2.8T 参数，Agent Arena 开源第一</strong></p>
+</blockquote>
+<figure><img src="https://cdn-thumbnails.huggingface.co/social-thumbnails/models/moonshotai/Kimi-K3.1-Pro.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>11 月 5 日，月之暗面（Moonshot AI）按 10 月 24 日发布时的承诺，在 Hugging Face 上放出了 Kimi K3.1 Pro 的完整模型权重（仓库 11 月 2 日创建、11 月 4 日公开）。Kimi K3.1 Pro 是原生多模态的 MoE 模型，总参数 2.8T、单次推理激活约 104B、896 个专家，上下文约 1M tokens，采用混合 KDA/Gated DSA 注意力与 MXFP4 量化感知权重。在 Arena 的 Agent Arena 榜单上，它居开源模型第一、全部模型第 13 位，在生产力、编程、对话三项核心分类中全部第一；该排名基于 17,500 余段真实用户长程 agent 任务对话，净改进率 +5.1%，高于前代 K3 Max 的 +0.9%。Moonshot 自报的其他成绩包括 Terminal-Bench 4.0 得分 65.7（Claude Opus 5.5 为 66.4）、BrowseComp 92.1、OSWorld V2.1 79.6，均为厂商自报、未经独立验证。许可采用月之暗面自有的 Kimi K3.1 Pro License（非标准开源许可），年收入超 2,000 万美元的模型即服务企业需另行签署协议。</p>
+<p>权重放出不等于人人能跑：BF16 精度的权重文件约 5.6TB，即使 INT4 量化后仍需约 1.4TB 显存，消费级单卡本地部署基本不现实；华为昇腾与阿里云已于当日宣布支持。Moonshot 在博客中称，已从训练数据中主动剔除网络安全相关内容，理由是不希望放出的开权重扩展网络安全能力的前沿。</p>
+<p><strong>为什么重要：</strong> 这是迄今参数规模最大的开源权重模型，也是 Kimi K3.1 Pro 从&quot;能用&quot;到&quot;能拿走&quot;的关键一步——发布会上的承诺兑现了，开源生态才真正多了一个 3T 级的 agent 模型可供复现与二次开发。但 5.6TB 的体量把&quot;开源&quot;二字重新定义了一遍：能下载不等于能跑，真正能用上它的仍是拥有大规模算力的机构与云厂商，权重开放的红利首先会落在云端部署上，而不是个人电脑里。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://huggingface.co/moonshotai/Kimi-K3.1-Pro</li>
+<li>https://www.kucoin.com/news/flash/moonshot-ai-s-kimi-k3-1-pro-opens-2-8t-parameters-tops-open-model-rankings</li>
+<li>https://techjournal.org/kimi-k3-1-pro</li>
+</ul>
+<h2>技术与洞察</h2>
+<blockquote>
+<p><strong>METR 独立评估：Anthropic 模型进步速度翻倍，约八成加速可能来自 AI 自身</strong></p>
+</blockquote>
+<figure><img src="https://www.unite.ai/wp-content/uploads/2026/11/metr-estimates-anthropics-model-capability-growth-has-nearly-doubled.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>11 月 5 日，非营利 AI 评估机构 METR 发布对 Anthropic 的独立评估，结论是 Anthropic 在明确定义任务上的模型能力进步速度，约为 2024 年 3 月至 2025 年 10 月期间的两倍。评估以 Anthropic 的基准能力指数 AECI 为主要依据：自 2025 年 10 月以来，基准分数的增速为此前的 1.9 倍（95% 置信区间 1.5 至 2.8 倍），相当于一年走完了过去两年的路。METR 团队于 8 月 12 日至 10 月 29 日进驻 Anthropic，用 11 周查看内部预训练、强化学习、算力与基准数据并访谈约 15 名员工，数据包括 3 个未发布模型；METR 未收 Anthropic 费用。METR 估计，当前加速中约 80% 可能来自 AI 自身在研发中的使用（该数字不确定性很大），并表示有信心排除&quot;训练算力增长加快&quot;是加速主因。</p>
+<p>这份评估的限定条件与结论本身同样重要：Anthropic 有权单方面删节非公开信息，METR 称其删掉了&quot;多数最具信息量的证据&quot;；METR 坦言结论高度不确定，真实加速可能在 1.3 至 3 倍之间，且只覆盖可自动评分的明确任务。METR 的配套审查还指出，Anthropic 8 月公开风险报告中关于自动化研发的部分&quot;总体上低估了当时正在发生的加速程度&quot;，其&quot;2 倍加速阈值&quot;是否已被跨过&quot;有待商榷&quot;、&quot;有可能&quot;已被跨过。背景是 Anthropic CEO Dario Amodei 曾于 9 月 12 日发文呼吁行业放慢脚步、让安全措施跟上。</p>
+<p><strong>为什么重要：</strong> 这是第一份由外部机构拿着一家顶级实验室内部数据做出的&quot;AI 加速 AI 研发&quot;量化估计：不是业界传言，而是 1.9 倍这个带置信区间的数字。但它的可信度恰恰系于那些被删掉的证据——读者只能相信 METR 的判断，而无法复核。真正值得盯的不是&quot;翻倍&quot;这个标题，而是 METR 的另一句判断：在可预见的 12 个月里，看不到算法、算力或数据会构成明显瓶颈，这意味着加速可能还会继续复合。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://techxplore.com/news/2026-11-anthropic-rapidly-ai-slowdown-group.html</li>
+<li>https://www.unite.ai/metr-estimates-anthropics-model-capability-growth-has-nearly-doubled/</li>
+<li>https://985theriver.com/2026/11/05/anthropics-models-improving-nearly-twice-as-fast-with-help-from-ai-study-finds/</li>
+</ul>
+<h2>行业动态</h2>
+<blockquote>
+<p><strong>美股 AI 芯片股遭遇历史级抛售：纳指创 19 个月最大单日跌幅，英伟达跌 9.3%</strong></p>
+</blockquote>
+<figure><img src="https://www.srnnews.com/media/2026/11/1793880310510726HHPmmWPNfR.jpg?x76650" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>11 月 5 日周四，美股遭遇 4 月以来最惨烈的一天，抛售集中在 AI 与芯片股。纳斯达克综合指数跌 5.52% 至 24,315 点，创 19 个月最大单日跌幅，并确认进入技术性调整（较 10 月 6 日历史高点跌超 10%）；标普 500 指数跌 4.36% 至 7,353.73 点，为 4 月以来最差单日，成分股单日市值蒸发约 3 万亿美元。费城半导体指数跌约 12%，为有记录以来第二大单日跌幅。个股方面，英伟达跌 9.26% 至 181.60 美元，市值约 4.87 万亿美元，年内转跌 2.6%，为 4 月以来最低；AMD 跌 17.26% 至 404.40 美元，博通跌 10.43%，美光、Marvell 跌约 15%~17%，Arm 跌约 12%，SanDisk 跌 22%，CoreWeave 跌约 10%；超微电脑等 AI 服务器与数据中心概念股亦大幅下挫。英伟达当日成交 3.004 亿股，约为三个月均值的 2.6 倍。</p>
+<p>据路透与美联社报道，此轮抛售的直接触发因素是本周二中期选举中民主党横扫两院：投资者担心更严格的 AI 监管与数据中心建设放缓，十个州的选民在地方公投中否决了多数数据中心相关提案；同时市场本就担忧 AI 资本开支回报、GPU 云厂商的高杠杆融资与 10 年期美债收益率接近 5%。需要注意的是，以上是市场层面的解读，并非公司基本面变化：英伟达三季报定于 11 月 17 日发布，届时才能验证芯片需求是否真的放缓。</p>
+<p><strong>为什么重要：</strong> 一天之内，AI 交易的叙事从&quot;算力永远不够&quot;翻转为&quot;监管与回报率可能同时收紧&quot;——而触发翻转的不是某家公司的财报，是一场选举。这说明支撑过去两年 AI 股估值的不仅是订单与出货，还有一套关于&quot;建设不会被打断&quot;的政策假设；当这个假设被动摇，跌幅最大的恰恰是处在建设链条最上游的芯片与算力融资方。对 AI 行业本身而言，股价一日涨跌不改变技术路线，但它改变了融资成本：如果跌势持续，靠借债扩建数据中心的模式会先感受到压力。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.reuters.com/commentary/reuters-open-interest/global-markets-trading-day-graphic-2026-11-05/</li>
+<li>https://srnnews.com/ai-data-center-stocks-slip-as-democratic-sweep-clouds-expansion-plans/</li>
+<li>https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nvidia-slides-on-ai-chip-selloff-as-election-uncertainty-weighs/</li>
+</ul>
+<hr>
+<p>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。</p>
+<footer>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。<br>由 Muse 每日自动生成 · <a href="index.html">归档首页</a></footer>
+</div>
+</body>
+</html>
