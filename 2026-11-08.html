@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 早报 2026-11-08：苹果公布人形机器人 HALO 系统，宇树 G1 实测单项任务成功率 91%</title>
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; line-height: 1.75; background: #fafafa; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) { body { background: #121212; color: #e8e8e8; } }
+.wrap { max-width: 780px; margin: 0 auto; padding: 24px 20px 64px; }
+.topbar { max-width: 780px; margin: 0 auto; padding: 16px 20px 0; }
+.topbar a { color: #888; text-decoration: none; font-size: 14px; }
+.topbar a:hover { text-decoration: underline; }
+h1 { font-size: 26px; line-height: 1.4; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e0e0e0; }
+@media (prefers-color-scheme: dark) { h2 { border-bottom-color: #333; } }
+.meta { color: #888; font-size: 14px; margin-bottom: 8px; }
+blockquote { margin: 20px 0 8px; padding: 12px 16px; border-left: 4px solid #2563eb; background: #eef4ff; border-radius: 0 8px 8px 0; }
+@media (prefers-color-scheme: dark) { blockquote { background: #1a2333; } }
+blockquote p { margin: 0; font-weight: 600; }
+p { margin: 10px 0; }
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #2563eb; }
+figure { margin: 16px 0; }
+figure img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; display: block; background: #e8e8e8; }
+figcaption { font-size: 12px; color: #999; text-align: center; margin-top: 6px; }
+hr { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+@media (prefers-color-scheme: dark) { hr { border-top-color: #333; } }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+@media (prefers-color-scheme: dark) { footer { border-top-color: #333; } }
+.day-list { list-style: none; padding: 0; }
+.day-list li { margin: 0; padding: 16px 4px; border-bottom: 1px solid #e8e8e8; }
+@media (prefers-color-scheme: dark) { .day-list li { border-bottom-color: #2a2a2a; } }
+.day-list a { text-decoration: none; color: inherit; display: block; }
+.day-list a:hover .day-title { color: #2563eb; }
+.day-date { font-size: 13px; color: #999; }
+.day-title { font-size: 17px; font-weight: 600; margin-top: 2px; }
+.hero { margin: 24px 0 8px; }
+.hero p { color: #666; }
+@media (prefers-color-scheme: dark) { .hero p { color: #aaa; } }
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← 全部早报</a></div>
+<div class="wrap">
+<h1>AI 早报 2026-11-08：苹果公布人形机器人 HALO 系统，宇树 G1 实测单项任务成功率 91%</h1>
+<p>今日概览 · 7 条</p>
+<h2>3 分钟速览</h2>
+<ol>
+<li><strong>苹果公布人形机器人 HALO 系统</strong>：只在 1000 个仿真家庭里训练，宇树 G1 在 6 个从未建图的真实环境中 360 次单项任务平均成功率 91%，代码已开源。</li>
+<li><strong>OpenAI 据报再募 110 亿美元</strong>：估值 1.25 万亿美元，首笔资金 11 月 6 日已到账；整轮融资尚未关闭，或达 200 亿美元，低于 9 月原定的 300 亿美元目标。</li>
+<li><strong>Anthropic IPO 估值谈判滑向 1.2–1.3 万亿美元</strong>：10 月底收入 run rate 已超 800 亿美元，但买方出价较 9 月的 2 万亿美元预期大幅缩水；路演据报下周照常启动。</li>
+<li><strong>DeepMind：AI 智能体发现 1024 位 RSA 两处弱点</strong>：在人类指导下复现已知攻击所用算力减少约 3.5 倍；2048 位及以上密钥不受影响。</li>
+<li><strong>Anthropic 公开 Claude&quot;做梦&quot;式记忆机制</strong>：离线复读会话记录、纠正错误笔记、搭建关联维基，数据库任务得分从 0.655 升至 0.838。</li>
+</ol>
+<h2>要闻</h2>
+<blockquote>
+<p><strong>苹果公布人形机器人 HALO 系统：只在仿真家庭里训练，宇树 G1 实测单项任务成功率 91%</strong></p>
+</blockquote>
+<figure><img src="https://asiadaily.org/media/uploads/2026/11/17979-3360167414-1200x675.webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>苹果研究团队 11 月 4 日在 arXiv 提交论文《Perceptive Humanoid Motion from Simulation》，公布人形机器人自主控制系统 HALO（Humanoid Autonomy, Learned in simulation, running Onboard）。HALO 的训练数据完全来自仿真：约 300 小时的运动片段在 1000 个程序化生成的虚拟家庭中合成，数据生成耗时 48 小时、用了 250 块英伟达 H100，全程无需人类遥操作。系统部署在一台宇树 G1 人形机器人（29 个关节）上，背部加装的 Mac mini（M4 Pro、64GB 内存）负责高层推理，板载的英伟达 Jetson Orin NX 运行高速运动跟踪。</p>
+<p>在 6 个从未扫描、建图或用于训练的真实环境中，HALO 的 360 次单项任务平均成功率 91%，涵盖走向指定物体、坐椅子、侧身穿过半开的门、蹲伏钻桌子、推箱子、跟随行人 6 项技能；由多项动作串联的长序列任务平均成功率 70%。控制分三层：视觉语言模型编排器（默认 Qwen3.6-35B-A3B，约每 2 秒拆解一次任务）、运动生成器（输出 5 秒全身动作规划）、50Hz 的跟踪策略网络。苹果已开源整套代码，包括数据生成、训练与部署流程。</p>
+<p>需要说明的限定：HALO 目前主要依赖视觉、无法直接感知接触力；论文没有与其他系统做同任务横向对比；这是一项研究而非产品，苹果未透露任何家用机器人上市计划。91% 是作者自报的实验结果，尚未经独立复现。</p>
+<p><strong>为什么重要：</strong> 人形机器人真正的瓶颈从来不是电机，而是&quot;看—说—动&quot;的配对数据：遥操作采集又贵又慢。HALO 的思路是把数据生产交给算力——仿真家庭可以无限生成，数据集随算力扩展而非随人力扩展。如果这条路走得通，人形机器人的能力迭代速度将取决于 GPU 而不是采集团队。更值得注意的是硬件选择：苹果没有造自己的机器人，而是直接用市售的宇树 G1 加一台 Mac mini——这等于公开认证了宇树硬件作为研究平台的标准地位。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://asiadaily.org/news/17979/</li>
+<li>https://therobotdaily.com/apple-halo-humanoid-simulation-91-percent</li>
+<li>https://www.humanoidsdaily.com/news/apple-halo-humanoid-synthetic-data-unitree-g1</li>
+</ul>
+<blockquote>
+<p><strong>OpenAI 据报再募 110 亿美元：估值 1.25 万亿美元，整轮或达 200 亿美元</strong></p>
+</blockquote>
+<figure><img src="https://techcrunch.com/wp-content/uploads/2026/07/OpenAI-logo-green.jpg?w=1024" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>据彭博 11 月 6 日报道（路透随后以自有信源证实），OpenAI 已在本轮融资中完成首笔 110 亿美元交割，投资者于 11 月 6 日当天打款，公司估值 1.25 万亿美元。首笔出资方包括 Coatue Management 与 T. Rowe Price，软银、红杉、Founders Fund、a16z 及阿联酋财团也参与本轮。本轮融资尚未关闭，彭博称总额可能达到约 200 亿美元，剩余部分将在未来几周内完成。OpenAI 首席财务官 Sarah Friar 11 月 6 日在 CNBC 上确认，本轮按 1.25 万亿美元的投前估值定价，&quot;仍在进行中，但我们相当有信心&quot;。</p>
+<p>与 9 月的目标相比，本轮明显缩水：OpenAI 最初寻求至少 300 亿美元、估值约 1.4 万亿美元。按 1.25 万亿美元计，估值仍较今年 3 月那轮（1220 亿美元、估值 8520 亿美元）高出约 47%。据报道，OpenAI 向投资者表示 9 月年化收入接近 500 亿美元，预计年底达到或超过 700 亿美元。OpenAI 未就融资细节公开置评。</p>
+<p><strong>为什么重要：</strong> 这是 AI 泡沫论最直接的试金石之一：11 月 5 日芯片股刚经历历史级暴跌，OpenAI 第二天就以 1.25 万亿美元的估值拿到了真金白银——市场愿意为头部实验室继续定价，但不再按 9 月的 1.4 万亿美元报价单照单全收。缩水的 100 亿美元目标与 Anthropic 同期 IPO 估值的下滑（见下条）合起来看，私募市场正在给 AI 重新定价：增长故事还在，但要按更现实的倍数算账。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/</li>
+<li>https://mlq.ai/news/openai-raises-11-billion-at-a-125-trillion-valuation-in-first-close-of-new-round/</li>
+<li>https://dealroom.co/news/168544-openai-cuts-its-funding-round-target-by-10b-to-about-20b-as-the-ai-sell-/</li>
+</ul>
+<blockquote>
+<p><strong>Anthropic IPO 估值谈判滑向 1.2–1.3 万亿美元：收入 run rate 超 800 亿，路演据报下周照常</strong></p>
+</blockquote>
+<figure><img src="https://invezz-wp-media.lon1.digitaloceanspaces.com/2026/11/Dario-Amodei-of-Anthropic-speaking-at-event.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>据《华尔街日报》、彭博与路透 11 月 6 日至 7 日的报道，Anthropic 的 IPO 估值谈判正在快速下修：潜在买方讨论的估值区间已降至 1.2–1.3 万亿美元，低于 10 月中旬的 1.5 万亿美元，更远低于 9 月的 2 万亿美元；有投资者甚至提出约 1 万亿美元。募资规模也可能同步缩水，从原计划的最高 1000 亿美元降至约 800 亿美元。路透称，部分投资者质疑原定的路演时间表能否维持；但 The Information 报道称，Anthropic 仍计划下周按期启动路演。Anthropic 未宣布调整时间表，也未就估值置评。</p>
+<p>业绩面与估值走势形成反差：《华尔街日报》称，Anthropic 10 月底的收入 run rate 已超过 800 亿美元——这一数字在 11 月 2 日提交的修订版 S-1 招股书中被留空（原文写着&quot;截至 2026 年 10 月 31 日，我们的 run rate 收入为 $ &quot;）。三季度收入 170 亿美元、环比增长 47%，但三季度录得 5.67 亿美元经营亏损，而二季度为盈利 9.74 亿美元。Run rate 按最近 28 天消费收入乘以 13、再加月度订阅收入乘以 12 计算，招股书本身注明该指标不能替代 GAAP 收入。</p>
+<p><strong>为什么重要：</strong> 800 亿美元 run rate 对 1.2 万亿美元估值大约是 15 倍——放在任何 SaaS 标准下都不算贵，问题出在另一边：修订版招股书披露的算力承诺逼近 9000 亿美元，其中约 700 亿美元在未来 12 个月内到期，买方真正担心的是&quot;收入跑得快、烧钱跑得更快&quot;。这场 IPO 已成为 AI 行业的定价锚：如果连 Anthropic 都要接受 40% 的估值折让才能上市，整个一级市场的 AI 定价都得跟着重算。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://invezz.com/news/2026/11/07/anthropic-ipo-faces-test-after-recent-selloff-what-wall-street-experts-are-saying/</li>
+<li>https://aistockwire.com/blog/anthropic-ant-ipo-valuation-1-trillion-run-rate-blank-november-2026</li>
+<li>https://zmedia.co/news/anthropic-presses-ahead-with-ipo-roadshow-as-investors-question/</li>
+</ul>
+<h2>开发生态</h2>
+<blockquote>
+<p><strong>Perplexity 推出 Teammates：常驻 AI 助手接手持续性工作，月费 200 美元</strong></p>
+</blockquote>
+<figure><img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25472503/STK271_PERPLEXITY_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>11 月 5 日，Perplexity 推出 Teammates——常驻型 AI 工作助手，定位从&quot;按提示响应一次&quot;转向&quot;按高级目标持续负责一项工作&quot;。Teammates 基于今年 2 月推出的 Perplexity Computer 构建，可承接项目上下文、技能与记忆，在后台并行处理多项任务、相互交接，并通过 Slack 与人交接、需要决策时升级给人类。目前为网页端研究预览版，仅向个人 Max 订阅用户开放，企业版 Pro 与 Max 暂不包含；iOS、Android 与桌面端据称即将推出，但未给具体时间。</p>
+<p>价格是这款产品的第一道门槛：使用 Teammates 必须订阅每月 200 美元的 Max 套餐。Max 套餐每月包含 10000 个 Computer 积分（100 积分折合 1 美元），Teammates 在推广期内免费使用，之后将从套餐积分中扣除，具体扣费标准未公布。Perplexity 称其内部 Slack 集成在四周内为 300 名员工完成了价值约 160 万美元的工作——这是公司自述，未经独立验证。</p>
+<p><strong>为什么重要：</strong> 这是继 OpenAI、Anthropic 之后第三家把&quot;AI 同事&quot;做成正式产品的头部公司，标志着智能体竞争的重心正在从&quot;一次任务做得多好&quot;转向&quot;能不能长期替你盯着一件事&quot;。但 200 美元月费加积分计费的组合，等于把这款产品先定位成高价生产力工具而非大众功能——Perplexity 赌的是企业愿意为&quot;不用反复交代上下文的助手&quot;付费，赌注能否成立，要看 Teammates 在真实工作流里省下的时间是否值回票价。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.perplexity.ai/page/perplexity-launches-teammates-_5wGYYftTnSs82GhKAOsuw</li>
+<li>https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work</li>
+<li>https://www.digitaltrends.com/cool-tech/perplexitys-new-ai-coworkers-can-take-over-your-workload-but-they-dont-come-cheap/</li>
+</ul>
+<h2>技术与洞察</h2>
+<blockquote>
+<p><strong>DeepMind：AI 智能体在人类指导下发现 1024 位 RSA 两处弱点，2048 位以上不受影响</strong></p>
+</blockquote>
+<figure><img src="https://www.webpronews.com/wp-content/uploads/2026/11/deepmind-ai-agents-legacy-1024-bit-rsa-weaknesses-featured.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>Google DeepMind 研究副总裁 Pushmeet Kohli 11 月 6 日在 X 上公布，AI 智能体在人类研究员指导下发现了 legacy 1024 位 RSA 加密的两处弱点，并附上两篇技术论文。第一处与数字签名伪造有关：当攻击者通过 PKCS#11 接口控制签名数据块 128 字节中的约 65 字节以上时，填充机制几乎不再提供额外保护，伪造难度与无填充签名相当；智能体在约 20 条人类指令、不到 4 天内复现了今年 9 月学术团队的一项 1024 位攻击，用了 391 个 CPU 核心年、约为原团队 1380 核心年的三分之一。第二处是批量分解的新算法：对同一位长的多个密钥，平均每个密钥的分解成本降低约 30 倍；针对短摘要的情形，论文给出的理论估算称新算法比此前最优方法快约 1600 倍——但这是理论渐近估算，并未在该规模下实际运行。</p>
+<p>研究由 Dj Dvijotham 与 Abhradeep Thakurta 牵头，合作者包括加州大学圣迭戈分校与 Inria 的密码学家 Nadia Heninger 与 Emmanuel Thomé。DeepMind 明确划了边界：结果只影响已被淘汰的 1024 位 RSA，现代协议普遍使用的 2048 位及以上密钥不受影响；NIST 自 2013 年起已不批准 1024 位 RSA 用于生成新签名。</p>
+<p><strong>为什么重要：</strong> 这件事的真正看点不在&quot;RSA 被攻破了&quot;——1024 位 RSA 早就是博物馆里的东西，而在&quot;AI 做密码分析&quot;的方式：一个负责设计与审计的监督模型加一个负责写代码、跑实验的执行模型，在人类只发 20 条消息的情况下完成了过去需要一个密码学团队花五个月做的攻击复现，还顺手找到了更优算法。密码学长期依赖&quot;攻击成本高到不值得&quot;的假设，而 AI 正在系统性地压低这个成本——这次是旧标准，下一次被压低成本的可能是更新的防线。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://cryptobriefing.com/google-deepmind-ai-rsa-1024-bit-weaknesses/</li>
+<li>https://www.webpronews.com/deepmind-ai-agents-legacy-1024-bit-rsa-weaknesses/</li>
+<li>https://explainx.ai/blog/deepmind-ai-agents-two-weaknesses-1024-bit-rsa-claimed-vs-verified-2026</li>
+</ul>
+<blockquote>
+<p><strong>Anthropic 公开 Claude 智能体记忆机制：&quot;做梦&quot;整理记忆，数据库任务得分显著提升</strong></p>
+</blockquote>
+<figure><img src="https://cms.interestingengineering.com/wp-content/uploads/2026/07/Untitled-design-2026-07-25T000909.910.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>Anthropic 11 月 6 日在工程博客发表《The components of agent memory》，首次系统披露 Claude 智能体的记忆机制。Anthropic 把智能体记忆定义为&quot;模型从经验中获得、并在会话之间保留的知识&quot;，分四层：原始会话记录、笔记、表征（representation）、注入上下文。其中最引人注目的是&quot;做梦&quot;（dreaming）：智能体空闲时离线复读自己的会话记录，对照修正错误的笔记、合并重复内容、搭建相互链接的维基，并决定哪些内容值得载入下一次会话。这一思路源自 Letta 与加州大学伯克利分校提出的&quot;睡眠时计算&quot;（sleep-time compute）。</p>
+<p>Anthropic 给出的内部实验数据（均为公司自测，未经独立验证）：在持续学习基准 CL-Bench 1.0 的数据库任务上，带记忆的 Opus 5.5 得分从 0.655 升至 0.838，Sonnet 5.5 从 0.644 升至 0.833；在《宝可梦 红》的长程任务中，善于精简记忆的 Fable 5 只保留 9 个文件加一个仪表盘、赢得 4 枚徽章，而事无巨细记录的 Sonnet 3.7 存了 413 个文件、只赢得 1 枚；用约 35 万份内部文件（约 4.2 亿 tokens）搭建维基时，128 轮&quot;做梦&quot;后 25 道评估题的得分从 13% 升至 48%，搜索加维基的组合达到 61%、高于纯搜索的 53%。Anthropic 同时提醒：做梦消耗算力、错误的记忆会被反复注入后续会话，因此这仍是研究性机制，未作为通用产品功能发布。</p>
+<p><strong>为什么重要：</strong> 智能体真正的短板从来不是单次任务做得多好，而是&quot;第二天还记不记得昨天学到了什么&quot;。Anthropic 这篇博客把答案写得很具体：记忆不是把所有记录都塞进上下文，而是分层存放、离线整理、只把最精华的一小块注入每次会话——宝可梦实验里&quot;记的少反而赢得多&quot;就是最直观的证据。对开发者来说更实际的一点是：Claude Code 的自动记忆只加载 MEMORY.md 的前 200 行或 25KB 作为索引，写好这块&quot;记忆的目录&quot;比堆量更重要。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://cellcog.ai/blog/anthropic-agent-memory-dreaming/</li>
+<li>https://interestingengineering.com/ai-robotics/anthropic-claude-dreaming-memory-research</li>
+<li>https://platform.claude.com/docs/en/managed-agents/dreams</li>
+</ul>
+<h2>行业动态</h2>
+<blockquote>
+<p><strong>Dropbox 3.5 亿美元收购 Tigris，推出面向 AI 智能体的 DBX Agent Cloud</strong></p>
+</blockquote>
+<figure><img src="https://techcrunch.com/wp-content/uploads/2021/03/GettyImages-1211180751.jpg?w=1024" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>Dropbox 11 月 5 日随三季报宣布，已签署最终协议、以约 3.5 亿美元现金收购云存储创业公司 Tigris Data，预计 2026 年四季度完成交割；据 TechCrunch 报道，这将是 Dropbox 成立以来最大的一笔收购。Tigris 由前 Uber 存储工程师创立，提供全球分布式的 S3 兼容对象存储、不收出站流量费，自 2021 年成立以来累计融资约 3190 万美元。Dropbox 同步推出新业务 DBX Agent Cloud：面向开发 AI 应用与智能体的公司提供存储与数据层，首期产品为可独立购买的 S3 兼容对象存储，后续将扩展文件系统与内容处理能力（文档、图片、音频、视频），让智能体能够跨任务、跨会话管理文件。</p>
+<p>Dropbox 的算盘很直接：把自家运营十余年、已实现 EB 级规模的存储基建能力，连同闲置容量一起卖给 AI 开发者，从&quot;帮人存文件&quot;转向&quot;卖 AI 基建&quot;。DBX Agent Cloud 尚未公布定价与上线时间，收购也尚未完成交割。</p>
+<p><strong>为什么重要：</strong> 继 Fal、Fireworks 之后，推理层与存储层正在成为 AI 基建里各自独立的大额赛道——智能体要长期运行，就得有个地方持续放它的文件、记忆与中间结果，对象存储正是这层需求里最先能卖钱的部分。Dropbox 这笔收购的信号意义大于金额本身：一家以个人文件同步起家的公司，正在把自己重定位成 AI 应用的水电煤供应商。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/</li>
+<li>https://siliconangle.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-releases-new-ai-productivity-features/</li>
+<li>https://www.fool.com/earnings/call-transcripts/2026/11/06/dropbox-dbx-q3-2026-earnings-call-transcript/</li>
+</ul>
+<hr>
+<p>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。</p>
+<footer>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。<br>由 Muse 每日自动生成 · <a href="index.html">归档首页</a></footer>
+</div>
+</body>
+</html>
