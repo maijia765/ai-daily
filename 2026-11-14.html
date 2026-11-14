@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 早报 2026-11-14：OpenAI 解散独立机器人团队，赌通用模型直接跑机器人</title>
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; line-height: 1.75; background: #fafafa; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) { body { background: #121212; color: #e8e8e8; } }
+.wrap { max-width: 780px; margin: 0 auto; padding: 24px 20px 64px; }
+.topbar { max-width: 780px; margin: 0 auto; padding: 16px 20px 0; }
+.topbar a { color: #888; text-decoration: none; font-size: 14px; }
+.topbar a:hover { text-decoration: underline; }
+h1 { font-size: 26px; line-height: 1.4; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e0e0e0; }
+@media (prefers-color-scheme: dark) { h2 { border-bottom-color: #333; } }
+.meta { color: #888; font-size: 14px; margin-bottom: 8px; }
+blockquote { margin: 20px 0 8px; padding: 12px 16px; border-left: 4px solid #2563eb; background: #eef4ff; border-radius: 0 8px 8px 0; }
+@media (prefers-color-scheme: dark) { blockquote { background: #1a2333; } }
+blockquote p { margin: 0; font-weight: 600; }
+p { margin: 10px 0; }
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #2563eb; }
+figure { margin: 16px 0; }
+figure img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; display: block; background: #e8e8e8; }
+figcaption { font-size: 12px; color: #999; text-align: center; margin-top: 6px; }
+hr { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+@media (prefers-color-scheme: dark) { hr { border-top-color: #333; } }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+@media (prefers-color-scheme: dark) { footer { border-top-color: #333; } }
+.day-list { list-style: none; padding: 0; }
+.day-list li { margin: 0; padding: 16px 4px; border-bottom: 1px solid #e8e8e8; }
+@media (prefers-color-scheme: dark) { .day-list li { border-bottom-color: #2a2a2a; } }
+.day-list a { text-decoration: none; color: inherit; display: block; }
+.day-list a:hover .day-title { color: #2563eb; }
+.day-date { font-size: 13px; color: #999; }
+.day-title { font-size: 17px; font-weight: 600; margin-top: 2px; }
+.hero { margin: 24px 0 8px; }
+.hero p { color: #666; }
+@media (prefers-color-scheme: dark) { .hero p { color: #aaa; } }
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← 全部早报</a></div>
+<div class="wrap">
+<h1>AI 早报 2026-11-14：OpenAI 解散独立机器人团队，赌通用模型直接跑机器人</h1>
+<p>今日概览 · 10 条</p>
+<h2>3 分钟速览</h2>
+<ol>
+<li><strong>OpenAI 解散独立机器人团队，赌通用模型直接跑机器人</strong>：据《财富》11 月 13 日独家报道，OpenAI 已解散独立机器人团队，研发人员并入主研究团队；理由是 GPT-6 Astra 等通用模型已能直接操控机器人。</li>
+<li><strong>Anthropic IPO 认购达六倍，Amodei 称算力是&quot;最深的商业困境&quot;</strong>：据彭博社报道，Anthropic IPO 订单约为发行量的六倍；CEO Amodei 在与摩根大通 CEO 戴蒙的直播对谈中称，买多少算力是公司最难的决策。</li>
+<li><strong>英伟达再跌 2.01% 收 162.85 美元，HSBC 降级至持有</strong>：汇丰将英伟达评级下调至持有，目标价从 375 美元砍至 170 美元；股价较 10 月 6 日高点已回撤约 33%。</li>
+<li><strong>六款中国模型权重里被指有 Blackwell&quot;指纹&quot;</strong>：前 OpenAI 研究员 Will DePue 发布取证报告称，DeepSeek、月之暗面、MiniMax、蚂蚁的六款模型初始权重带有 Blackwell 芯片的特征；报告同时强调，这不能证明芯片位置或走私。</li>
+<li><strong>DeepSeek 开放&quot;全家桶&quot;应用 API，可 1:1 复刻自家 App</strong>：联网搜索、文件解析、链接阅读、语音与安全校验等 App 能力全部进入 API，另开放搜索、OCR、语音识别与合成等独立接口。</li>
+</ol>
+<h2>要闻</h2>
+<blockquote>
+<p><strong>OpenAI 解散独立机器人团队，赌通用模型直接跑机器人</strong></p>
+</blockquote>
+<figure><img src="https://explainx.ai/images/blog-library/humanoid-robot-walk.webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>据《财富》11 月 13 日独家报道，OpenAI 已解散独立的机器人团队，OpenAI 在被问及时确认了这次重组。机器人研究团队并入首席研究官 Mark Chen 领导的主研究团队，应用机器人与硬件团队并入总裁 Greg Brockman 领导的 Applied 组织。OpenAI 给出的理由是，GPT-6 Astra 等通用模型现在可以直接用于机器人，无需再为机器人单独建模型栈。</p>
+<p>触发这次判断的是一项英伟达的研究：在英伟达的模拟操作基准上，GPT-6 Astra 驱动的智能体成功率达 74.8%，而顶尖专用机器人模型只有 51.0%。这是 OpenAI 第二次解散机器人团队：第一次是在 2020 至 2021 年，之后 2024 年重建并与人形机器人公司 Figure 合作，该合作已于 2025 年 2 月结束。OpenAI 发言人称机器人仍是公司长期愿景的核心，CEO 奥尔特曼把自研人形机器人首次公开演示的目标定在 2027 年。据《财富》报道，OpenAI 最近一个季度运营亏损 109 亿美元，并可能在 2027 年初 IPO。</p>
+<p><strong>为什么重要：</strong> 这不是一次普通的组织调整，而是一次路线押注：OpenAI 认为机器人问题的解法不在机器人本身，而在通用模型够不够强。如果 Astra 这类模型真能在真实硬件上复现模拟基准里的优势，机器人赛道的竞争逻辑会从&quot;谁有最好的机器人团队&quot;变成&quot;谁有最强的通用模型&quot;。但模拟基准不等于工厂车间——74.8% 是仿真里的数字，真实世界的延迟、触觉与安全问题还没经过验证。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://explainx.ai/blog/openai-disbands-robotics-team-gpt-6-astra-robots-fortune-2026</li>
+<li>https://madrobot.blog/2026/11/13/openai-disbands-robotics-team-gpt-6-astra/</li>
+</ul>
+<blockquote>
+<p><strong>Anthropic IPO 认购达六倍，Amodei 称算力是&quot;最深的商业困境&quot;</strong></p>
+</blockquote>
+<figure><img src="https://the-decoder.com/wp-content/uploads/2026/10/Claude-Duet.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>据彭博社 11 月 13 日报道，Anthropic 的 IPO 认购需求已达到发行量的约六倍，有望成为史上规模最大的 IPO。公司与联合创始人计划通过公开募股筹资最高约 644 亿美元，另有 260 亿美元来自芯片与云厂商的同期私募，目标估值约 1.4 万亿美元；发行价区间仍为每股 70–78 美元，预计 11 月 18 日定价、11 月 19 日在纳斯达克以代码 ANT 挂牌。高盛与摩根士丹利牵头，另有 20 家银行参与承销。</p>
+<p>11 月 13 日，Anthropic CEO Dario Amodei 在摩根大通纽约总部与该行 CEO Jamie Dimon 进行直播对谈——这是路演收尾阶段最受关注的一场活动。Amodei 在对谈中称，决定购买多少算力是公司&quot;最深的商业困境&quot;：Anthropic 招股书列出的算力承诺总额达 9009 亿美元、延续至 2045 年，其中约 4516 亿美元落在 2030 年之前；有单个季度算力成本占到收入的 48%。Amodei 说，公司有意&quot;往少了买&quot;，需求高涨时再到现货市场补。招股文件同时显示，截至 10 月 31 日，Anthropic 的年化收入运行率已达 810 亿美元，较 9 月底增加 100 亿美元。</p>
+<p><strong>为什么重要：</strong> 六倍超额认购说明机构对这笔交易的热情没有被科技股回调浇灭，但 Amodei 亲口点出的算力账才是这份招股书真正的风险项：9009 亿美元的承诺要靠未来二十年的收入来兑现，而算力价格与需求两头都在变。&quot;往少了买、现货补&quot;的策略等于把一部分成本控制权交给了现货市场——这在需求平稳时是精明，在需求暴涨时就是敞口。11 月 18 日的定价会给出第一个市场答案。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://the-decoder.com/anthropics-ipo-is-six-times-oversubscribed-and-on-track-to-become-the-largest-public-offering-in-history/</li>
+<li>https://www.thehindubusinessline.com/markets/anthropic-ipo-draws-sixfold-demand-targets-14-trillion-valuation/article71696359.ece/amp/</li>
+</ul>
+<blockquote>
+<p><strong>英伟达再跌 2.01% 收 162.85 美元，HSBC 降级至持有、目标价砍至 170 美元</strong></p>
+</blockquote>
+<figure><img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F1a4bae1da4a05d0d0e00a764e0d498057cecc411-3240x2160.jpg&w=1200&op=resize" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>英伟达股价 11 月 13 日连续第二个交易日下跌，收于 162.85 美元、跌 2.01%。当日开盘 169.91 美元、最高 170.00 美元、最低 158.39 美元，成交量约 3.61 亿股。汇丰分析师 Frank Lee 当日将英伟达评级从买入下调至持有，目标价从 375 美元大幅下调至 170 美元，仅比当日收盘价高约 4%。按收盘价计算，英伟达较 10 月 6 日高点 243.37 美元已回撤约 33%，市值约 3.9 万亿美元。</p>
+<p>黄仁勋辞职后的余波仍在消化中：董事会周三已接受辞呈，CFO Colette Kress 任临时 CEO（兼任 CFO）。英伟达三季度财报定于 11 月 17 日（周二）发布，这将是 Kress 以临时 CEO 身份面对市场的第一次财报电话会。黄仁勋已确认将在感恩节（11 月 26 日）前到国会作证，具体日期仍在协商。</p>
+<p><strong>为什么重要：</strong> 汇丰的目标价下调幅度本身就是信号：170 美元意味着分析师认为&quot;CEO 不确定性&quot;不是几天的噪音，而是要按折价计入估值的基本面变量。11 月 17 日的财报将是第一个检验点——Kress 需要同时回答两个问题：这季度的数字够不够硬，以及她打算怎么领导这家公司。盘中一度跌破 160 美元也说明，148.80 美元的周四低点并非牢固的底部。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.fool.com/coverage/stock-market-today/2026/11/13/stock-market-today-nov-13-nvidia-slides-after-hsbc-downgrades-stock-to-hold-on-ceo-uncertainty/</li>
+<li>https://www.smwmarkets.com/biggest-stock-movers-today-modine-cisco-virgin-galactic-nov-13/</li>
+</ul>
+<h2>开发生态</h2>
+<blockquote>
+<p><strong>Claude Meetings 进入 beta：Claude 坐进 Google Meet 会议，边开会边干活</strong></p>
+</blockquote>
+<figure><img src="https://cms.aidailypost.com/uploads/anthropic_launches_claude_meetings_putting_ai_9a46255e2a.webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>Anthropic 11 月 12 日推出 Claude Meetings（beta）：Claude 以可见参与者的身份加入视频会议，实时跟进讨论、回答问题，并当场起草文档、白板与幻灯片，会后把笔记、待办事项与所有产物汇总到 claude.ai 上的会议页面。首发仅支持 Google Meet，面向 Team 与 Enterprise 套餐推出，单次会议最长可待 8 小时。</p>
+<p>隐私规则是这次发布的重点：Claude 不会加入有外部参与者的会议，除非管理员明确允许；会议中途有外部来宾加入时它会自动退出。零数据保留、HIPAA 配置或客户自管加密密钥的组织暂不能用。beta 期间，会议笔记、文字记录与会中回答免费；会中生成的文档与白板等产物免费至 2027 年 2 月 10 日，之后的价格尚未公布。据产品负责人 Nicholas Lin 透露，该功能已在内部测试约两个月，几乎参加了全部内部会议。</p>
+<p><strong>为什么重要：</strong> 这是 Anthropic 办公套件拼图的最后一块：Sheets、Whiteboards、Data 之后，Claude 终于进了会议本身。与只做转录纪要的会议工具不同，Claude Meetings 赌的是&quot;开会的同时就把活干了&quot;——这个定位如果成立，会议记录类产品的价值会被重估；如果不成立，它只是一个更贵的纪要员。限制条件也值得注意：只支持 Google Meet、只要 Team/Enterprise 套餐，Zoom 与 Teams 的用户还得等。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://aidailypost.com/news/anthropic-launches-claude-meetings-putting-ai</li>
+<li>https://www.techcityauthority.com/2026/11/claude-meetings-beta.html</li>
+</ul>
+<blockquote>
+<p><strong>Thinking Machines 开源 Inkling 2 Small 权重，Apache 2.0 协议</strong></p>
+</blockquote>
+<figure><img src="https://api.alphasignal.ai/api/news/preview/thinking-machines-opens-inkling-2-small-s-594b-weights-to-developers/v2/card.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>Thinking Machines Lab 11 月 12 日在 X 上宣布，Inkling 2 Small 的完整权重已在 Hugging Face 开放下载，许可证为 Apache 2.0。这是该公司第二代模型的首款产品，11 月 5 日先在自家微调与推理平台 Tinker 上线，发布时承诺在外部安全测试与红队演练完成后开放权重，如期兑现。</p>
+<p>Inkling 2 Small 是混合专家模型，总参数 594B、每 token 激活 17B，支持图像输入，上下文窗口最长 1M token，厂商自报的 Artificial Analysis 智能指数为 31 分，较第一代 Inkling 大幅提升。主检查点采用 NVFP4 格式，模型卡注明运行需要至少 500GB 显存（例如 2 块英伟达 B300 或 4 块 H200）；另提供 MXFP8 检查点。Tinker 上的托管价格为输入每百万 token 0.30 美元、采样 1.00 美元。</p>
+<p><strong>为什么重要：</strong> 这是美国实验室少有的真正开放权重的前沿级模型：594B 总参数、Apache 2.0 协议，允许商用、修改与再分发。但&quot;开放&quot;二字要打个折：500GB 的显存门槛意味着个人与小团队基本跑不动，实际能用的仍是拥有数据中心级硬件的机构。它的真正意义在供给侧——给开源生态补上了一个美国血统的大模型，与 DeepSeek、Kimi、GLM 等中国开源模型形成对照。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://alphasignal.ai/news/thinking-machines-opens-inkling-2-small-s-594b-weights-to-developers</li>
+<li>https://cellcog.ai/blog/inkling-2-small/</li>
+</ul>
+<blockquote>
+<p><strong>World Labs Atlas 全面开放：照片变 3D 世界，附开发 API</strong></p>
+</blockquote>
+<figure><img src="https://framerusercontent.com/images/NOBkOEblazcqBbVRwxXVP8XQ.webp?width=2000&height=1120" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>李飞飞创立的 World Labs 11 月 12 日宣布，世界模型 Atlas 向所有人开放。此前 Atlas 自 9 月 1 日发布以来只向合作伙伴开放早期访问。这次上线了两个网页应用：Viewfinder 从一张或多张照片出发，生成新视角、视频或可漫游的 3D 场景；Chisel 则从简单的房间布局与物体摆放出发，按文字提示或参考图生成场景。此外还有 Splats to Mesh（把 3D 高斯泼溅转为带真实几何的多边形网格）与 Relight（重打光）两项工具。</p>
+<p>World Labs 同时公开了支撑这两个应用的全部 API，文档面向编码智能体设计，提供 CLI 与 Claude Code、Codex、Cursor 的可安装&quot;技能&quot;。Atlas 输出关键帧、视频片段或 3D 高斯泼溅，支持导出为 Blender 与游戏引擎可用的网格——Blender 5.3 已于 11 月 10 日原生支持高斯泼溅导入。计费按积分结算：1000 积分折合 1 美元，一次精修泼溅运行 5000 积分（5 美元），失败的运行免费；模型权重仍不开放。</p>
+<p><strong>为什么重要：</strong> Atlas 的关键一步不是&quot;能生成 3D&quot;，而是&quot;生成的东西能带走&quot;：导出网格、进 Blender、进游戏引擎，意味着它从演示走向生产管线。对创作者而言，真正的新变量是 API 对智能体友好——让编码智能体直接调用世界模型生成场景，比多一个网页应用更值得关注。但公司宣称的&quot;最长 1 分钟 1440p 视频&quot;等指标尚未有独立复现，质量上限仍待验证。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://radiancefields.com/world-labs-opens-atlas-world-model-to-everyone</li>
+<li>https://aifrontierpost.com/articles/world-labs-atlas-opens-to-everyone/</li>
+</ul>
+<blockquote>
+<p><strong>DeepSeek 开放&quot;全家桶&quot;应用 API，开发者可 1:1 复刻自家 App</strong></p>
+</blockquote>
+<figure><img src="https://media.aiarabai.com/2026/11/13213139/deepseek-app-api-features-developers.webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>DeepSeek 11 月 13 日宣布，把 DeepSeek App 里的核心能力全部开放进 API。开发者只需开启对应参数，即可在自己的产品里调用联网搜索、深度思考搜索、文件输入（PDF、Office 文档与图片）、链接阅读、语音交互与安全校验；同时开放搜索、网页抓取、OCR、语音识别与语音合成等独立工具接口。DeepSeek 称，借助这批能力，开发者&quot;甚至可以 1:1 复刻完整的 DeepSeek App&quot;，并随附了一个开源聊天界面演示。</p>
+<p>这批能力由新模型 deepseek-flash（即 DeepSeek-V4.1-Flash-1017）承载，覆盖 Messages、Responses 与 Chat Completions 三类接口。扩展能力除模型 Token 费用外另收工具调用费；面向公众提供应用服务的开发者须开启安全校验，并自行承担内容安全审核、大模型登记与 AI 标识等义务。</p>
+<p><strong>为什么重要：</strong> DeepSeek 这次开放的不是一个新模型，而是一整套&quot;应用层能力&quot;：过去开发者要自己拼搜索、解析、语音与风控，现在这些都成了 API 的开关项。这对国内 AI 应用开发者是实打实的降本——但代价是更深的绑定：调用越方便，离开 DeepSeek 生态的成本就越高。值得注意的还有合规一侧：DeepSeek 把内容安全责任明确推给了开发者，平台只提供开关。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://cryptobriefing.com/deepseek-opens-app-features-developers-api/</li>
+<li>https://zhidx.com/p/610514.html</li>
+</ul>
+<blockquote>
+<p><strong>腾讯混元发布实时语音模型 Hy Realtime，能说会唱还能调工具</strong></p>
+</blockquote>
+<figure><img src="https://f1.tokenpost.kr/2026/11/zzo5vuutwe_th_1600x900.webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>腾讯混元 11 月 13 日发布全新实时语音模型 Hy Realtime，主打&quot;边听边想边说&quot;的实时语音交互：能理解含糊表述、说半截话与中途改口，结合上下文推断意图；表达上音质、韵律与情感更自然，支持共情交流。新增的两项能力是 Agentic 工具调用与唱歌：模型可根据对话内容自行判断是否联网搜索、调用工具再回答；与腾讯音乐灵音 AI 团队深度合作后，可按歌手、曲风、语种、年份点歌并直接演唱。</p>
+<p>Hy Realtime 已在元宝 App 语音通话与腾讯客服上线，近期将通过腾讯云对外提供 API 服务。用户可在最新版元宝 App 语音通话中选择&quot;初语&quot;音色体验，或访问网页 Demo 试用部分能力。</p>
+<p><strong>为什么重要：</strong> 实时语音模型的竞争正在从&quot;说得像人&quot;转向&quot;边说边办事&quot;：Hy Realtime 把工具调用做到语音对话里，意味着语音助手可以从聊天工具变成执行入口。唱歌能力看似花哨，实则是语音合成可控性的硬指标——能按要求唱准一首歌的模型，语调与节奏的控制力不会差。真正的考验在腾讯云 API 上线之后：有多少开发者愿意为实时语音的延迟与成本买单。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://core.dpangzi.com/article/read/6af6d1dad92c730a15abee4c.html</li>
+<li>https://ai.shenpal.com/news/hunyuan-hy-realtime</li>
+</ul>
+<blockquote>
+<p><strong>阿里 Qoder 揭晓&quot;Qoduck&quot;身份：匿名测试的鸭子就是 Qwen4-Max 预览版</strong></p>
+</blockquote>
+<figure><img src="https://omniakey.com/og/blog/qwen-4-release-date.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>阿里 11 月 13 日揭晓谜底：Qoder 编程助手 11 月 7 日上线的一款匿名模型&quot;Qoduck&quot;（不公布厂商、参数与跑分），正是新一代千问 4 家族的首款模型 Qwen4-Max 预览版（qwen4-max-preview）。据官方介绍，Qoduck 在匿名测试的四天里每天都在迭代上线新版本，公开的预览版是进一步升级后的版本，强化了知识理解、编程与 Agent 执行能力，尤其强调 CAD、Blender、Figma、Revit、UE5 等专业软件的操作能力。</p>
+<p>Qwen4-Max 预览版于 11 月 11 日 10:00 通过 Token Plan 开放，预览期至 11 月 25 日 24:00（UTC+8），到期后下线；仅通过 Token Plan 订阅提供，不支持标准按量计费。模型接受文本、图像与视频输入，上下文窗口 100 万 token，推理与回答共用的最大输出为 393216 token。目前可通过千问 App、Qoder、千问办公与 QwenStudio 体验。阿里尚未公布正式版发布时间、开放权重计划与任何基准成绩。</p>
+<p><strong>为什么重要：</strong> 阿里用匿名模型&quot;盲测&quot;四天再揭晓身份，是个聪明的发布策略：先让市场凭体验说话，再亮出品牌。但硬指标的缺失同样显眼——没有基准、没有权重、没有正式版时间表，只有一个两周后就下线的预览窗口。对开发者而言，真正的判断依据不是这四天的口碑，而是预览期内亲手测出的效果；对阿里而言，Qwen4 的正式发布才是下半场。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.zky.ee/xtgnews/202608/357723_article357723.htm</li>
+<li>https://omniakey.com/zh/blog/qwen-4-release-date</li>
+</ul>
+<h2>技术与洞察</h2>
+<blockquote>
+<p><strong>前 OpenAI 研究员称六款中国模型权重里有 Blackwell&quot;指纹&quot;，但证明不了走私</strong></p>
+</blockquote>
+<figure><img src="https://madrobot.blog/images/nvidia-hgx-b200-board.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>前 OpenAI 研究员 Will DePue 11 月 12 日通过其非营利组织 Unemployment Labs 发布一份取证报告称，六款中国最新开源模型的权重中带有英伟达 Blackwell 芯片的&quot;指纹&quot;，相关发现 11 月 13 日经 The Decoder 报道后引发广泛讨论。报告涉及的模型为 DeepSeek-V4-Flash、DeepSeek-V4-Pro、月之暗面 Kimi K3 与 K3.1-Pro、MiniMax-M3 与蚂蚁 Ling-3.1-flash，来自四家中国实验室。</p>
+<p>方法是利用 PyTorch 初始化权重的硬件特征：GPU 按流式多处理器（SM）数量切分随机数生成任务，Hopper 芯片为 132 个，Blackwell B200/B300 为 148 个，GB200/GB300 机架为 152 个；训练后仍有部分初始值未被改写。DePue 搜索了约 6 万亿种种子与布局组合来复现这些初始值，匹配强度为 49 至 1385 sigma，而随机匹配的预期上限约为 8 sigma；该方法在 24 款已公开训练硬件的模型上全部验证正确，其中包括在真实 B300 芯片上对 DeepSeek-V4-Flash 445 行权重逐比特复现。报告估计，五次训练共动用约 1.2 万块 Blackwell GPU，硬件价值超过 5 亿美元——但 DePue 本人 11 月 12 日已修正了这组估算数字，并表示对它们&quot;没有信心&quot;。</p>
+<p>报告同时划清了界限：指纹识别的是生成初始权重的硬件，不必然是完成全部训练的硬件；它不说明芯片归谁所有、在什么地方，也不证明芯片被走私入境或违反出口管制——中国公司完全可以在境外数据中心租用 Blackwell 算力。报告还指出，AMD MI300X 也可配置为 148 或 152 单元并产生类似特征。阿里、智谱、腾讯、小米与阶跃的最新模型仍读作 Hopper 特征；DeepSeek 最新的 V4.1-Flash 则未找到指纹。DePue 称，OpenAI 与 Anthropic 的资深研究员已独立核查了他的方法；该研究尚未经过同行评审。</p>
+<p><strong>为什么重要：</strong> 这是第一次有人拿出技术证据，说明中国顶尖实验室确实在使用被禁运的 Blackwell 芯片做初始化——此前这只是官员与记者的怀疑。但证据的边界与证据本身同样重要：它证明的是&quot;用过 Blackwell&quot;，不是&quot;怎么弄到的&quot;。对出口管制辩论而言，这份报告把问题从&quot;有没有&quot;推向了&quot;从哪条路来的&quot;；而对模型发布者而言，它揭示了一个新现实：开源权重本身就会泄露训练硬件的痕迹，以后想藏也藏不住。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://madrobot.blog/2026/11/13/chinese-ai-models-nvidia-blackwell-fingerprints/</li>
+<li>https://www.ai-primer.com/engineer/stories/blackwell-weight-fingerprints</li>
+</ul>
+<hr>
+<p>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。</p>
+<footer>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。<br>由 Muse 每日自动生成 · <a href="index.html">归档首页</a></footer>
+</div>
+</body>
+</html>
