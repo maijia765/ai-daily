@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 早报 2026-11-16：美团 LongCat-2.5 权重开源，全程未用英伟达 GPU</title>
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; line-height: 1.75; background: #fafafa; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) { body { background: #121212; color: #e8e8e8; } }
+.wrap { max-width: 780px; margin: 0 auto; padding: 24px 20px 64px; }
+.topbar { max-width: 780px; margin: 0 auto; padding: 16px 20px 0; }
+.topbar a { color: #888; text-decoration: none; font-size: 14px; }
+.topbar a:hover { text-decoration: underline; }
+h1 { font-size: 26px; line-height: 1.4; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e0e0e0; }
+@media (prefers-color-scheme: dark) { h2 { border-bottom-color: #333; } }
+.meta { color: #888; font-size: 14px; margin-bottom: 8px; }
+blockquote { margin: 20px 0 8px; padding: 12px 16px; border-left: 4px solid #2563eb; background: #eef4ff; border-radius: 0 8px 8px 0; }
+@media (prefers-color-scheme: dark) { blockquote { background: #1a2333; } }
+blockquote p { margin: 0; font-weight: 600; }
+p { margin: 10px 0; }
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #2563eb; }
+figure { margin: 16px 0; }
+figure img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; display: block; background: #e8e8e8; }
+figcaption { font-size: 12px; color: #999; text-align: center; margin-top: 6px; }
+hr { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+@media (prefers-color-scheme: dark) { hr { border-top-color: #333; } }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+@media (prefers-color-scheme: dark) { footer { border-top-color: #333; } }
+.day-list { list-style: none; padding: 0; }
+.day-list li { margin: 0; padding: 16px 4px; border-bottom: 1px solid #e8e8e8; }
+@media (prefers-color-scheme: dark) { .day-list li { border-bottom-color: #2a2a2a; } }
+.day-list a { text-decoration: none; color: inherit; display: block; }
+.day-list a:hover .day-title { color: #2563eb; }
+.day-date { font-size: 13px; color: #999; }
+.day-title { font-size: 17px; font-weight: 600; margin-top: 2px; }
+.hero { margin: 24px 0 8px; }
+.hero p { color: #666; }
+@media (prefers-color-scheme: dark) { .hero p { color: #aaa; } }
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← 全部早报</a></div>
+<div class="wrap">
+<h1>AI 早报 2026-11-16：美团 LongCat-2.5 权重开源，全程未用英伟达 GPU</h1>
+<p>今日概览 · 6 条</p>
+<h2>3 分钟速览</h2>
+<ol>
+<li><strong>美团 LongCat-2.5 权重开源，全程未用英伟达 GPU</strong>：11 月 15 日，The Decoder 报道美团已公开 LongCat-2.5 的模型权重，1.6 万亿参数的智能体模型全程使用国产加速器训练，MIT 协议允许商用。</li>
+<li><strong>OpenAI 开设科学博客，GPT-6 Astra 主导标准模型格点定义证明</strong>：11 月 15 日，OpenAI 新设科学博客，首篇客座文章称 GPT-6 Astra 主导完成了标准模型格点定义的候选证明，解决了一个悬置 50 多年的基础问题。</li>
+<li><strong>Claude Opus 5.5 成为付费计划默认模型，Anthropic 发官方提示词指南</strong>：Anthropic 让 Opus 5.5 成为 Pro、Max、Ultra 与 Team 套餐的默认模型，并建议用户删掉&quot;think hard&quot;这类提示词、从中等推理强度起步。</li>
+<li><strong>Gemini 4 Carbon 登顶 MathArena 数学榜，但单题成本是 GPT-6.1 Sol 的约 15 倍</strong>：MathArena 榜单上 Carbon 以 85.4% 预期成绩超过 GPT-6.1 Sol 的 80.6%，但解一道题要花 15.70 美元，约为后者的 15 倍。</li>
+<li><strong>本周看点：英伟达 11 月 17 日发财报、Anthropic 11 月 18 日定价</strong>：英伟达三季报是黄仁勋辞职后的首份财报，市场预期营收约 1090 亿美元、同比增约 91%；Anthropic 预计 11 月 18 日定价、11 月 19 日以 ANT 在纳斯达克挂牌。</li>
+</ol>
+<h2>要闻</h2>
+<blockquote>
+<p><strong>美团 LongCat-2.5 权重开源，全程未用英伟达 GPU</strong></p>
+</blockquote>
+<figure><img src="https://the-decoder.com/wp-content/uploads/2026/11/meituan-logo-wall-chatgpt-5.6.jpg" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>据 The Decoder 11 月 15 日报道，美团 LongCat 团队已公开 LongCat-2.5 的模型权重，MIT 协议允许商用、修改与再分发。LongCat-2.5 是 11 月 2 日发布的原生多模态智能体模型，面向长流程自主任务、尤其是编程：混合专家架构总参数 1.6 万亿，每 token 激活约 480 亿，上下文 100 万 token，最长输出 12.8 万 token，图像与视频以 token 形式与文本一起处理。</p>
+<p>硬件是这次发布真正的新闻：美团称模型全程使用国产加速器训练，未使用英伟达 GPU；自托管指南只给出华为昇腾 Atlas A2 的部署方案——194 块加速器，其中 2 块处理图像、64 块处理提示词输入、128 块负责生成回答，专家权重与激活值量化到 4 位精度，指南里没有任何英伟达 GPU 的部署说明。美团此前称，前代 LongCat-2.0 于 6 月底在一组 5 万多块国产 AI 芯片上完成训练。性能方面，美团自报 LongCat-2.5 在 Terminal-Bench v2.1 上得 88.4 分，接近 Claude Opus 5 的水平；托管 API 限时价为每百万输入 token 0.30 美元、输出 1.20 美元。</p>
+<p><strong>为什么重要：</strong> 这是第一份可以公开验证的&quot;万亿参数模型脱离英伟达硬件&quot;的案例——权重既已公开，任何有合适集群的人都能复核美团的说法。需要注意口径：美团自己的文章没有点名训练所用的芯片厂商，&quot;国产加速器&quot;是其表述，华为的名字只出现在部署指南里；88.4 分也是厂商自报，尚无独立复现。把它和上周前 OpenAI 研究员的 Blackwell&quot;指纹&quot;报告放在一起看，出口管制下的算力版图正在两头收紧：一边是被指绕过管制用上 Blackwell 的实验室，一边是干脆不用英伟达也能训出万亿参数模型的实验室。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/</li>
+<li>https://venturebeat.com/technology/meituan-releases-the-open-weights-of-its-longcat-2-5-llm-with-vision-under-a-permissive-mit-license</li>
+</ul>
+<blockquote>
+<p><strong>OpenAI 开设科学博客，GPT-6 Astra 主导标准模型格点定义证明</strong></p>
+</blockquote>
+<figure><img src="https://images.ctfassets.net/kftzwdyauwt9/4G0ZXdAgtYGRHIUayuw7AH/1ef11f2013114c08e706289c24b9897d/step-toward-defining-the-standard-model-diagram.png?w=3840&q=90&fm=webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>OpenAI 11 月 15 日开设了一个专门的科学博客，首篇是加州大学圣塔芭芭拉分校粒子理论组负责人、OpenAI 访问科学家 Nathaniel Craig 的客座文章：他与 GPT-6 Astra 合作，提出了一个标准模型的格点定义候选方案。标准模型描述已知基本粒子与三种基本力，但 50 多年来一直缺少一个不依赖微扰论的非微扰定义——把时空离散成格点是公认的出路，难点在于弱力只作用于左手费米子，这种&quot;手征性&quot;让格点化极难处理，而其中&quot;相位处方&quot;这一步已悬置 25 年以上。</p>
+<p>Craig 写道，他本来有一个策略思路，但无法证明它在所有情形下都成立；Astra 把这个思路变成了构造：建议了把力场搬到逐级加密的格点上的方法，证明了逐级比较会收敛到确定的答案，并主导完成了详细的证明。三位格点场论专家 Maarten Golterman、Andreas Kronfeld 与 Yigal Shamir 审阅了证明并提出质询。相关预印本已于 10 月提交，Craig 为唯一作者。Craig 本人强调，这只是&quot;一个开端而非终点&quot;：构造是否满足反射正定性等全部要求仍待学界检验，方法是&quot;原则上的答案，而非能用于实际模拟的答案&quot;。</p>
+<p><strong>为什么重要：</strong> 这是 OpenAI 第一次把前沿模型放进理论物理最硬的基础问题里讲故事，而且讲法相当克制：作者没有宣称&quot;AI 证明了标准模型&quot;，而是把功劳拆成&quot;策略是人的、证明是模型主导的、审阅是三位人类专家的&quot;，连未解决的部分都一一列出。真正值得看的不是这篇博客本身，而是它标志着 GPT-6 Astra 正在从&quot;帮你写代码&quot;进入&quot;帮你做证明&quot;的领地——如果这类合作成为常态，科学发现的署名规则与验证流程都得跟着改。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://openai.com/index/step-toward-defining-the-standard-model/</li>
+<li>https://dailyaibrief.com/news/openai-gpt-6-astra-standard-model-lattice-proof-hFYmscOH</li>
+</ul>
+<h2>开发生态</h2>
+<blockquote>
+<p><strong>Claude Opus 5.5 成为付费计划默认模型，Anthropic 发官方提示词指南</strong></p>
+</blockquote>
+<figure><img src="https://cellcog.ai/blog/which-claude-model-to-use/og.jpg?v=62aa6a457f" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>Anthropic 已让 Claude Opus 5.5 成为 Claude Pro、Max、Ultra 与 Team 套餐的默认模型，并发布了一份官方选型与提示词指南。据 The Decoder 11 月 14 日报道，指南由 Anthropic 技术人员 Addy Osmani 撰写，核心建议有两条：一是删掉&quot;think hard&quot;这类沿用自旧模型时代的提示词，模型会自行按任务调节推理量，带上这类词只会让响应变慢而质量没有可测量的提升；二是从默认的中等（medium）推理强度起步，Anthropic 内部测试称 Opus 5.5 在中等强度下的表现与上一代 Opus 5 在高强度下相当，而成本约为后者的 70%。</p>
+<p>价格上，Opus 5.5 为每百万 token 输入 4 美元、输出 20 美元，Sonnet 5.5 为 2/10 美元，Haiku 5.5 为 0.10/0.50 美元，旗舰 Fable 5.2 为 8/40 美元。指南建议：日常工程与知识工作从 Opus 5.5 起步，范围明确的小任务用 Sonnet 5.5，分类、路由与子智能体任务用 Haiku 5.5，只有 Opus 搞不定时才上 Fable 5.2。另据报道，Pro 套餐包含的 Fable 5.2 试用将于 11 月 16 日结束。</p>
+<p><strong>为什么重要：</strong> 模型厂商第一次正式告诉用户&quot;别再喊 think hard 了&quot;，这本身就是个信号：推理强度正在从用户要操心的旋钮变成模型自己管的内部参数。更实际的是钱——默认模型从 Sonnet 换成 Opus 意味着同一句话的 token 单价翻倍，Anthropic 用&quot;中等强度够用了&quot;来对冲涨价感，开发者真正该做的，是拿自己的任务实测中等强度 Opus 5.5 与高强度 Sonnet 5.5 的每任务成本，而不是照抄指南的推荐。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.bpinfo.ca/en/news/2026-11-14-anthropic-opus-5-5-default-prompting-guide/</li>
+<li>https://cellcog.ai/blog/which-claude-model-to-use/</li>
+</ul>
+<blockquote>
+<p><strong>Runway 开源机器人模型 Praxis-1，Apache 2.0 协议可商用</strong></p>
+</blockquote>
+<figure><img src="https://d3phaj0sisr2ct.cloudfront.net/site/images/sanity/2026/11/frame-8-bddb7fbc-4647-44e5-bf65-1fbb7e559b24-af3f1b60-26e7-4a91-afda-ee27b0a4674b.webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>Runway 11 月 11 日开源了机器人模型 Praxis-1 的权重、推理代码与微调代码，Apache 2.0 协议，包含商用。Praxis-1 是 Runway 所称的&quot;世界动作模型&quot;：270 亿参数的混合专家扩散 Transformer，根据指令、摄像头画面与机械臂当前姿态，同时预测接下来约 1.6 秒的视频与对应的动作，每次调用约半秒内在单块 H100 上完成。模型 9 月首次亮相时只对合作伙伴开放，本次发布附带三个检查点——基础模型、针对 DROID 单臂数据集微调版与双臂 YAM 机器人微调版，并原生支持 LeRobot 机器人库。</p>
+<p>Runway 自报的成绩是 RoboLab-120 模拟基准 46.2%（1200 次尝试成功 555 次），在世界动作模型类别中排名第一、开源视觉-语言-动作模型中第一；但英伟达排行榜同期显示它在全部模型中排第五，排在两个前沿模型智能体与两个专用机器人模型之后，且成绩均为 Runway 自测、未经独立验证。硬件门槛不低：完整模型 54.4GB，需单块 80GB 显存；4 位量化版 17.5GB，仓库里给 RTX 5090 的实验性推理路径明确标注尚未在真机上闭环验证过。</p>
+<p><strong>为什么重要：</strong> OpenAI 上周刚解散独立机器人团队、赌通用模型直接跑机器人，Runway 同一周就把一个专用机器人模型彻底开源——两条路线摆在了同一张桌子上。Praxis-1 的价值不在 46.2% 这个数字（模拟任务里一半以上还是失败），而在于它是第一个把权重、推理与微调代码打包给所有人的机器人&quot;世界模型&quot;：机器人研究者终于有了一个可以下载、微调、部署的共同起点，而不是只能调用各家闭源 API。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://runway.com/news/company-news/praxis-1-is-now-available</li>
+<li>https://freshsynapse.com/articles/runway-praxis-1-open-weights-robot-model-2026-11-12/</li>
+</ul>
+<h2>技术与洞察</h2>
+<blockquote>
+<p><strong>Gemini 4 Carbon 登顶 MathArena 数学榜，但单题成本是 GPT-6.1 Sol 的约 15 倍</strong></p>
+</blockquote>
+<figure><img src="https://the-decoder.com/wp-content/uploads/2026/11/gemini-4_carbon_logo.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>据 The Decoder 11 月 14 日报道，Google 的 Gemini 4 Carbon 登上第三方数学基准 MathArena 的榜首，成为很长一段时间以来第一个登顶该榜的非 OpenAI 模型。MathArena 由苏黎世联邦理工学院的 Jasper Dekoninck 运营，用新发布的数学竞赛与研究难题测试模型，题目是模型训练时没见过的；Dekoninck 11 月 13 日在 X 上公布了排名变动。榜单显示 Carbon（高推理档）预期成绩 85.4%，Claude Fable 5.2（最高档）82.8%，OpenAI 的 GPT-6.1 Sol（最高档）80.6%，开源模型中最好的是 Kimi K3.1 Pro 的 54.3%。</p>
+<p>但榜首的代价写在同一张表里：按 MathArena 的成本统计，解一道题跑一次，Carbon 要花 15.70 美元，Fable 5.2 要 40.20 美元，GPT-6.1 Sol 只要 1.07 美元——Carbon 约为 Sol 的 15 倍。另有两个保留：三者的 95% 置信区间相互重叠（Carbon ±3.0 分、Fable ±5.3 分），前两名的顺序在统计上并不确定；出于成本考虑，Carbon 只跑了 ArXivLean 一项评测，其余分数是统计估计而非实测。Google 本身没有宣布这次登顶，CEO 皮查伊与 DeepMind 负责人哈萨比斯只是转发了 Dekoninck 的帖子，未加评论。</p>
+<p><strong>为什么重要：</strong> 这个榜单真正的信息不在&quot;谁第一&quot;，而在&quot;第一名贵多少&quot;：按分数除以美元算，Sol 每美元换约 75 分预期成绩，Carbon 约 5 分，Fable 约 2 分。数学能力的天花板正在被推理算力堆上去，但堆的成本曲线比分数曲线陡得多——对绝大多数实际用途，榜单前三名的选择题其实是成本题，不是能力题。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://the-decoder.com/gemini-4-carbon-takes-the-matharena-crown-but-costs-15-times-more-than-gpt-6-1-sol/</li>
+<li>https://ai-oriens.com/en/news/gemini-4-carbon-matharena/</li>
+</ul>
+<h2>前瞻与传闻</h2>
+<blockquote>
+<p><strong>本周看点：英伟达 11 月 17 日发财报、Anthropic 11 月 18 日定价</strong></p>
+</blockquote>
+<figure><img src="https://eu-images.contentstack.com/v3/assets/bltd74737b907a31bbb/blt1ef63b9cebc42709/69c5dd3d38265b1aa18e0974/nvidia-building.jpeg?format=pjpg&auto=webp&width=1200&quality=75&height=630&fit=crop&branch=main" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>本周两件大事前后脚。英伟达将于美东时间 11 月 17 日（周二）盘后发布 2027 财年三季报，电话会于美东 17 点举行（北京时间 11 月 18 日早 6 点）。市场共识为营收约 1090 亿美元、同比增长约 91%，调整后每股收益约 2.48 美元；公司自身指引为营收 1080 亿美元上下浮动 2%、毛利率约 74%（低于上季度的 75%），且假定中国数据中心算力收入为零。这是黄仁勋 11 月 12 日辞职后的首份财报，临时 CEO、原 CFO Colette Kress 将主持电话会；期权市场为财报日定价约 ±10% 的股价波动。分析师普遍认为，财报数字本身不如四季度指引与 Vera Rubin 平台的放量节奏重要。</p>
+<p>Anthropic 预计 11 月 18 日（周三）为 IPO 最终定价，11 月 19 日（周四）在纳斯达克以代码 ANT 挂牌。发行区间仍为每股 70–78 美元、发行 8.25 亿股，募资最高约 644 亿美元；据彭博报道，订单量约为发行量的六倍。据报道，约 20% 的份额预留给散户投资者，远高于常见的 5%–10%；另有 260 亿美元来自芯片与云厂商的同期私募，其中 Google 与英伟达各约 100 亿美元。需要说明的是，定价与挂牌日期均为媒体引述知情人士的报道口径，招股书本身未写日期，一切以最终定价为准。</p>
+<p><strong>为什么重要：</strong> 这两件事是同一根链条的两端：英伟达的财报要回答&quot;AI 基建的钱还花不花得动&quot;，Anthropic 的定价要回答&quot;公开市场还愿不愿意为前沿模型付多少钱&quot;。英伟达还是 Anthropic 约 100 亿美元私募的出资方之一，11 月 17 日的财报电话会与 11 月 18 日的定价之间只隔一夜，任何一边的意外都会直接传导到另一边。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://pepperstone.com/en/insights/market-analysis/equities/nvidia-earnings-preview-jensen-huang-s-exit-and-margin-pressure-raise-caution</li>
+<li>https://www.tradingkey.com/analysis/stocks/us-stocks/262304476-anthropic-ipo-ant-price-above-78-orders-six-times-november-14-2026-tradingkey</li>
+</ul>
+<hr>
+<p>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。</p>
+<footer>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。<br>由 Muse 每日自动生成 · <a href="index.html">归档首页</a></footer>
+</div>
+</body>
+</html>
