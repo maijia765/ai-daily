@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 早报 2026-11-22：Anthropic 数学家称与 Claude 攻克黎曼猜想，机器核查进行中</title>
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; line-height: 1.75; background: #fafafa; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) { body { background: #121212; color: #e8e8e8; } }
+.wrap { max-width: 780px; margin: 0 auto; padding: 24px 20px 64px; }
+.topbar { max-width: 780px; margin: 0 auto; padding: 16px 20px 0; }
+.topbar a { color: #888; text-decoration: none; font-size: 14px; }
+.topbar a:hover { text-decoration: underline; }
+h1 { font-size: 26px; line-height: 1.4; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e0e0e0; }
+@media (prefers-color-scheme: dark) { h2 { border-bottom-color: #333; } }
+.meta { color: #888; font-size: 14px; margin-bottom: 8px; }
+blockquote { margin: 20px 0 8px; padding: 12px 16px; border-left: 4px solid #2563eb; background: #eef4ff; border-radius: 0 8px 8px 0; }
+@media (prefers-color-scheme: dark) { blockquote { background: #1a2333; } }
+blockquote p { margin: 0; font-weight: 600; }
+p { margin: 10px 0; }
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #2563eb; }
+figure { margin: 16px 0; }
+figure img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; display: block; background: #e8e8e8; }
+figcaption { font-size: 12px; color: #999; text-align: center; margin-top: 6px; }
+hr { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+@media (prefers-color-scheme: dark) { hr { border-top-color: #333; } }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+@media (prefers-color-scheme: dark) { footer { border-top-color: #333; } }
+.day-list { list-style: none; padding: 0; }
+.day-list li { margin: 0; padding: 16px 4px; border-bottom: 1px solid #e8e8e8; }
+@media (prefers-color-scheme: dark) { .day-list li { border-bottom-color: #2a2a2a; } }
+.day-list a { text-decoration: none; color: inherit; display: block; }
+.day-list a:hover .day-title { color: #2563eb; }
+.day-date { font-size: 13px; color: #999; }
+.day-title { font-size: 17px; font-weight: 600; margin-top: 2px; }
+.hero { margin: 24px 0 8px; }
+.hero p { color: #666; }
+@media (prefers-color-scheme: dark) { .hero p { color: #aaa; } }
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← 全部早报</a></div>
+<div class="wrap">
+<h1>AI 早报 2026-11-22：Anthropic 数学家称与 Claude 攻克黎曼猜想，机器核查进行中</h1>
+<p>今日概览 · 5 条</p>
+<h2>3 分钟速览</h2>
+<ol>
+<li><strong>Anthropic 数学家称与 Claude 攻克黎曼猜想</strong>：Levent Alpöge 11 月 20 日公布 1700 万行 Lean 形式化证明，多项机器核查已通过，但完整核查与学界评议尚未完成。</li>
+<li><strong>OpenAI 公布 GPT-6.2 反对抗蒸馏防线</strong>：推理提取攻击成功率从 54.0% 降至 0.2%，推理轨迹与对话历史绑定，点名 DeepSeek 与月之暗面。</li>
+<li><strong>Thinking Machines 发布开源小模型 Inkling 2 Mini</strong>：26.4B 参数循环 Transformer，约 20GB 就能在 32GB 内存笔记本上离线运行。</li>
+<li><strong>ChatGPT Space 向全球 Plus 用户开放</strong>：共享页面与幻灯片可协作编辑、自动更新，手机端也可编辑页面。</li>
+<li><strong>Claude 电脑操控进入 Team 与 Enterprise 测试</strong>：Claude 可看屏幕、操作获批的桌面应用，默认关闭，仅组织管理员可开启。</li>
+</ol>
+<h2>要闻</h2>
+<blockquote>
+<p><strong>Anthropic 数学家称与 Claude 攻克黎曼猜想，1700 万行 Lean 证明已公布</strong></p>
+</blockquote>
+<figure><img src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2272066590.jpg?c=16x9&q=w_800,c_fill" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>Anthropic 技术人员、数学家 Levent Alpöge 于 11 月 20 日在个人网站公布称，他与 Claude 合作找到了黎曼猜想的证明，同时还覆盖更广义的广义黎曼猜想。证明没有以传统论文形式发表，而是以 175,187 个 Lean 4 文件、约 1700 万行代码的机器可核查形式发布，压缩包 239.3MB、展开后超过 61.5GB；Alpöge 称若写成自然语言论证将超过 25 万页。据他自述，最后的关键步骤在 11 月 15 日深夜完成，他事先就发布事宜征询过 Anthropic 首席执行官 Dario Amodei。</p>
+<p>核查进展仍在进行中：据《华尔街日报》11 月 21 日报道，维护 Lean 证明检查软件的 Lean Focused Research Organization 与 Mathlib Initiative 在联合声明中表示对证明正确性&quot;完全有信心&quot;；但独立核查页面显示，截至 11 月 21 日中午，con-leche 比对与 lean4lean 全量检查已通过，lake comparator 端到端运行与内核重放仍在进行。克雷数学研究所仍将黎曼猜想列为未解难题，其主席称&quot;从今天的宣布到真正理解，还有很长很难的路&quot;。Alpöge 本人也承认，他尚未完全掌握证明涉及的全部数学，计划在简化后写出正式版本。</p>
+<p><strong>为什么重要：</strong> 这是 167 年来最著名的数学难题首次以&quot;AI 合作完成、机器可核查&quot;的形式被宣称攻克——如果最终站得住脚，意味着前沿模型已能产出人类自己尚未完全理解的数学成果；但目前它仍是一项&quot;已公布、部分核查通过&quot;的声明，不是学界共识，真正的考验是后续数月甚至数年的同行审查。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.wsj.com/tech/ai/anthropic-mathematician-says-claude-has-solved-the-most-famous-problem-in-math-9361920b</li>
+<li>https://www.cnn.com/2026/11/21/tech/anthropic-math-problem-ai?cid=external-feeds_iluminar_meta</li>
+<li>https://explainx.ai/blog/levent-alpoge-anthropic-riemann-hypothesis-claude-lean-proof-claimed-vs-verified-2026</li>
+</ul>
+<blockquote>
+<p><strong>Thinking Machines 发布开源小模型 Inkling 2 Mini，循环架构让 26B 参数跑赢大模型</strong></p>
+</blockquote>
+<figure><img src="https://thinkingmachines.ai/news/inkling-2-mini/images/cover-social.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>Thinking Machines Lab 11 月 20 日发布开源权重模型 Inkling 2 Mini：总参数 26.4B、每次推理仅激活 3.4B，采用循环 Transformer 架构——中间 12 层对每个 token 重复跑三遍，首尾各 6 层只跑一遍，相当于用同一组权重&quot;多想几遍&quot;来换推理深度。模型原生多模态（文本与图像输入、文本输出）、上下文 100 万 token，权重以 NVFP4/MXFP8 混合精度打包成约 20GB 的单一检查点，Apache 2.0 协议，可在 32GB 内存的 Mac 或英伟达 DGX Spark 上本地离线运行，Ollama、vLLM、SGLang 均已支持。</p>
+<p>官方给出的基准成绩：DeepSWE v1.1 为 48.2%，SWE-bench Pro v2 Hard 为 77.9%，均领先同量级的 Qwen3.8-27B；Artificial Analysis 智力指数 20.1 分，与 Qwen3.8-27B 持平，但每次任务成本约低 6 倍、速度约快 4 倍。Thinking Machines 还同步发布了一个可变循环的研究版检查点，供研究者探索&quot;循环次数与推理深度&quot;的关系。</p>
+<p><strong>为什么重要：</strong> 这是第一批公开的循环 Transformer 开源模型：它验证了&quot;小模型靠重复计算也能获得深推理&quot;的路线，而且 20GB 就能离线跑在笔记本上，把前沿级 agent 编码能力拉到了个人设备层面。提醒一句：目前的成绩基本都来自官方自己的评测，不同榜单的测试口径并不统一。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://thinkingmachines.ai/news/inkling-2-mini/</li>
+<li>https://huggingface.co/thinkingmachines/Inkling-2-Mini</li>
+<li>https://artificialanalysis.ai/articles/inkling-2-mini</li>
+</ul>
+<h2>开发生态</h2>
+<blockquote>
+<p><strong>ChatGPT Space 向全球 Plus 用户开放，共享页面与幻灯片可协作、自动更新</strong></p>
+</blockquote>
+<figure><img src="https://www.thebrief.news/en/standard/article/45953/chatgpt-spaces-reaches-plus-users-without-agent-access/opengraph-image?99fd91dcd2b2fd56" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>OpenAI 在 11 月 20 日的发布说明中宣布，ChatGPT Space 即日起向全球 18 岁及以上的 Plus 用户开放。Space 是 ChatGPT 内的共享协作空间，可与他人一起创建交互式页面、幻灯片和网站，页面与幻灯片可根据连接的应用与工具自动更新；它取代了侧栏原有的 Library，成为页面、幻灯片、图片与上传文件的统一存放处，手机端现在也可以创建和编辑页面。此前 Space 自 9 月 29 日起仅对 Pro、Business 与 Enterprise 用户开放。</p>
+<p>限制仍在：打开共享页面需要对方也是有 Space 权限的付费账号，免费用户无法打开，也没有公开链接；Plus 用户暂时还不能在 Space 里使用常驻智能体 Dots——Dots 目前只在小范围 Plus 用户中测试。同期 ChatGPT 应用还做了界面简化、性能提升和线程重构，Codex Remote 的可靠性也有改进。</p>
+<p><strong>为什么重要：</strong> Space 下放到 Plus 意味着 OpenAI 把&quot;与 ChatGPT 一起写文档、做幻灯片&quot;的协作能力推向了最主流的付费人群，正面撞上 Notion、Google Docs 这类生产力工具；但免费用户被挡在门外、Dots 暂不可用，说明它目前仍是付费墙内的半成品。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.thebrief.news/en/standard/article/45953/chatgpt-spaces-reaches-plus-users-without-agent-access</li>
+<li>https://cryptobriefing.com/chatgpt-space-plus-users-mobile-editing/</li>
+<li>https://releases.sh/openai/chatgpt</li>
+</ul>
+<blockquote>
+<p><strong>Claude 电脑操控进入 Team 与 Enterprise 测试，可看屏幕、操作获批桌面应用</strong></p>
+</blockquote>
+<figure><img src="https://cdn.prod.website-files.com/6a0f028de6df6a6fd88c3f89/6b0101707252d8381c45c230_6b01016ed757e26835c248cc_claude-computer-use-opens-team-enterprise-plans.avif" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>据 Anthropic 11 月 20 日的发布说明，Claude 的 computer use（电脑操控）功能已向 Team 与 Enterprise 计划开放测试：Claude 可以看到用户屏幕，并在桌面端、网页端与移动端操作管理员批准的桌面应用。此前该能力只在有限的研究预览中提供。这也是继 Google 本周给 Mac 版 Gemini 加上电脑操控之后，桌面智能体赛道的又一次推进。</p>
+<p>安全控制上，功能在所有组织账号默认关闭，只有组织 Owner 或 Primary Owner 才能开启，管理员可逐项控制 Claude 能访问哪些应用；Anthropic 称正在分批向各组织开放，而非一次性全量上线。同期 Claude Code 更新到 2.1.330，新增内置图表绘制（easel）与企业登录等功能。</p>
+<p><strong>为什么重要：</strong> 桌面智能体的竞争已从&quot;谁家模型能点鼠标&quot;进入&quot;谁家能让企业放心地放行&quot;：Anthropic 把开关完全交给组织管理员、默认关闭，是在用权限设计换企业客户的信任；真正的风险仍在提示注入与不可撤销操作上，管理员的配置粒度决定了这功能是生产力还是隐患。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://emergent.sh/news/claude-computer-use-opens-team-enterprise</li>
+<li>https://releasebot.io/updates/anthropic</li>
+</ul>
+<h2>技术与洞察</h2>
+<blockquote>
+<p><strong>OpenAI 公布 GPT-6.2 反对抗蒸馏防线，推理提取攻击成功率从 54% 降至 0.2%</strong></p>
+</blockquote>
+<figure><img src="https://images.ctfassets.net/kftzwdyauwt9/5SUtPGdssrttC7LfP1yoJ1/b6b000846ab3576c1735c29534ab20b0/combatting-adversarial-distillation-social.png?w=1600&h=900&fit=fill" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>OpenAI 11 月 20 日在官网发文，详解如何对抗&quot;对抗蒸馏&quot;——未经授权用前沿模型输出训练另一个保障较弱的模型。核心是保护模型的&quot;受保护推理&quot;（解题的中间步骤，即思维链）：GPT-6.2 Astra 与 Sol 把推理与产生它的对话历史绑定，新增消息可以沿用此前的推理，但一旦改写了此前的消息，API 就会丢弃随后的推理；旧模型家族也无法读取新模型的受保护推理。内部自适应红队测试显示，攻击者从此前对话中提取推理的成功率从 GPT-6 Astra 的 54.0% 降至 GPT-6.2 Astra 的 0.2%，当场提取则从 22.9% 降至 0.9%。</p>
+<p>文章还披露，OpenAI 内部研究发现，用精确推理轨迹训练的学生模型在网络安全任务上普遍优于只用推理摘要训练的学生模型，说明推理轨迹确实会转移额外的网络攻击能力。OpenAI 称今年已发现多起未经授权的蒸馏行动，每周的执法封禁从数千到数万个账号不等，今夏以来显著上升；文章点名 DeepSeek 与月之暗面（Moonshot AI），称 2 月已向国会通报相关活动。部分改进也将回推到 GPT-6 Astra。</p>
+<p><strong>为什么重要：</strong> OpenAI 把推理轨迹当成与权重同级的核心资产来保护，等于承认&quot;防蒸馏&quot;已是前沿实验室竞争的主战场之一；但文中的数字全部来自 OpenAI 自己的内部测试，六个攻击模型未具名，外部无法独立复现。点名 DeepSeek 与月之暗面，则把一场技术攻防公开变成了地缘层面的指控。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://openai.com/index/combatting-adversarial-distillation/</li>
+<li>https://fourweekmba.com/ai-openai-cuts-reasoning-extraction-success-from-54-to-0-2/</li>
+<li>https://dev.to/mikefluff/openai-ties-gpt-62-reasoning-to-chat-history-to-block-copying-41nj</li>
+</ul>
+<hr>
+<p>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。</p>
+<footer>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。<br>由 Muse 每日自动生成 · <a href="index.html">归档首页</a></footer>
+</div>
+</body>
+</html>
