@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 早报 2026-11-23：OpenRouter 下架三家推理服务商，200 万金丝雀实验揭开提示词泄露链</title>
+<style>
+:root { color-scheme: light dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif; line-height: 1.75; background: #fafafa; color: #1a1a1a; }
+@media (prefers-color-scheme: dark) { body { background: #121212; color: #e8e8e8; } }
+.wrap { max-width: 780px; margin: 0 auto; padding: 24px 20px 64px; }
+.topbar { max-width: 780px; margin: 0 auto; padding: 16px 20px 0; }
+.topbar a { color: #888; text-decoration: none; font-size: 14px; }
+.topbar a:hover { text-decoration: underline; }
+h1 { font-size: 26px; line-height: 1.4; margin: 12px 0 4px; }
+h2 { font-size: 20px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e0e0e0; }
+@media (prefers-color-scheme: dark) { h2 { border-bottom-color: #333; } }
+.meta { color: #888; font-size: 14px; margin-bottom: 8px; }
+blockquote { margin: 20px 0 8px; padding: 12px 16px; border-left: 4px solid #2563eb; background: #eef4ff; border-radius: 0 8px 8px 0; }
+@media (prefers-color-scheme: dark) { blockquote { background: #1a2333; } }
+blockquote p { margin: 0; font-weight: 600; }
+p { margin: 10px 0; }
+ul, ol { padding-left: 24px; }
+li { margin: 6px 0; }
+a { color: #2563eb; }
+figure { margin: 16px 0; }
+figure img { width: 100%; max-height: 420px; object-fit: cover; border-radius: 10px; display: block; background: #e8e8e8; }
+figcaption { font-size: 12px; color: #999; text-align: center; margin-top: 6px; }
+hr { border: none; border-top: 1px solid #e0e0e0; margin: 32px 0; }
+@media (prefers-color-scheme: dark) { hr { border-top-color: #333; } }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e0e0e0; color: #999; font-size: 13px; }
+@media (prefers-color-scheme: dark) { footer { border-top-color: #333; } }
+.day-list { list-style: none; padding: 0; }
+.day-list li { margin: 0; padding: 16px 4px; border-bottom: 1px solid #e8e8e8; }
+@media (prefers-color-scheme: dark) { .day-list li { border-bottom-color: #2a2a2a; } }
+.day-list a { text-decoration: none; color: inherit; display: block; }
+.day-list a:hover .day-title { color: #2563eb; }
+.day-date { font-size: 13px; color: #999; }
+.day-title { font-size: 17px; font-weight: 600; margin-top: 2px; }
+.hero { margin: 24px 0 8px; }
+.hero p { color: #666; }
+@media (prefers-color-scheme: dark) { .hero p { color: #aaa; } }
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">← 全部早报</a></div>
+<div class="wrap">
+<h1>AI 早报 2026-11-23：OpenRouter 下架三家推理服务商，200 万金丝雀实验揭开提示词泄露链</h1>
+<p>今日概览 · 4 条</p>
+<h2>3 分钟速览</h2>
+<ol>
+<li><strong>OpenRouter 下架三家推理服务商</strong>：Dragos 用约 200 万个金丝雀提示词实测发现三家 AI 推理服务商数月来一直在泄露客户请求，OpenRouter 11 月 22 日下架三家、125 个端点取消零留存资格。</li>
+<li><strong>OpenAI 11 月 21 日大宕机 3.5 小时</strong>：鉴权数据库例行维护导致双副本同时失效，ChatGPT 与 API 请求失败率峰值达 75%，211 分钟后恢复。</li>
+<li><strong>黎曼猜想证明获 Lean 社区认证</strong>：Lean 与 Mathlib 11 月 21 日联合声明认证证明与陈述均正确；同一天斯坦福放出的纯人类竞争证明草稿，数小时内就被指出问题。</li>
+<li><strong>Qwen4 Max 登陆 Together AI</strong>：阿里 2.4 万亿参数旗舰模型上线第三方推理平台，单次调用读完 Tornado 整仓 344 个文件并修好 bug。</li>
+</ol>
+<h2>要闻</h2>
+<blockquote>
+<p><strong>OpenRouter 下架三家推理服务商，200 万金丝雀实验揭开 AI 推理链提示词泄露</strong></p>
+</blockquote>
+<figure><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEGP3P_elvK4C-QnSx5onZ67viDXCIgPCUYqtTF_RDNcLJfyQ4QMbegUmn8AJy5nEmnXfN4ACr6hHztG_DdqXlj54S21toacPQaZgRx2rgqZltN3lvREpZR2xlvgXF_iZ7zW0XT0b91mMiRDVaEB6TUvMFlWwaSa3_C7gwpxdKcNhLtIq15KqwaZrR3VI/s1600/openrouter.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>AI 路由平台 OpenRouter 11 月 22 日宣布，已将三家推理服务商移出平台，并取消 125 个端点的零数据留存（ZDR）资格，同时通知了所有可能受影响的客户。导火索是工业网络安全公司 Dragos 11 月 19 日公布的一项金丝雀实验：研究人员在 7 月至 11 月间向各家 AI 服务发送了约 200 万个埋有唯一链接与假凭证的提示词，然后追踪这些&quot;诱饵&quot;在哪里被使用——诱饵只能在一个地方被学到，一旦被使用，就说明有人读过那条提示词。</p>
+<p>实验结果相当难看：三家服务商在数月里一直在泄露客户请求，其中最早的一家从 7 月中旬就开始被盗；最大的一起泄露中，攻击者在 10 月下旬的几个短窗口内拿到了研究人员植入的数百个 AWS 密钥，那段时间发往该服务商的每个请求都被整包偷走，甚至包括模型还没跑就被拒绝的请求——说明攻击者在流量入口处就做了复制。攻击者拿到密钥后几小时内就开始试用，列 S3 存储桶、翻 Secrets Manager、试图创建 Bedrock 密钥和 IAM 用户，制造了数万次 AWS API 调用；11 月 1 日还动用了 AI 渗透测试框架 ARTEX 验证到手的密钥是否仍然有效。Dragos 与 OpenRouter 均未公开这三家服务商的名字，也未证实两者说的是否同一批。</p>
+<p>三家已公开通报的服务商各有不同说法。Together AI 11 月 21 日披露：自家 AI 编码智能体在开发公开 GitHub 仓库 xorl 时，把一个私有 Hugging Face 仓库的凭证提交了上去，未授权方借此下载了 2026 年 6 月 24 日、7 月 4 日、7 月 8 日与 7 月 14 日提交给 MiniMax M3、GLM-5.2 与 Kimi K2.6 模型的提示词样本，随后在样本里搜索其他服务的凭证并逐一试用，其中 5 个正是 Dragos 的金丝雀。Together AI 称没有证据表明数据进一步外流、据其了解数据已被删除，现已把零数据留存设为新账号默认项，并与外部取证公司和执法部门合作调查。Phala 的初步报告称攻击者控制了一台推理服务器、可在处理过程中查看请求数据，11 月 8 日已遏制，经网关发往其 DeepSeek V4 Flash 0731 模型的请求（10 月 21 日至 11 月 8 日）应视为已暴露、相关密钥须轮换。Novita 则承认路由配置问题导致部分 MiniMax 请求被转到了 MiniMax 官方 API，5 月 28 日至 11 月 11 日间经 Novita 使用 MiniMax 模型的用户，请求内容可能被第三方访问或留存。</p>
+<p><strong>为什么重要：</strong> 这是第一次有人用实测数据证明，&quot;零数据留存&quot;这个开关只约束第一跳：提示词离开你的手之后，会经过路由、转售商、模型方多层转手，每一层都可能存、可能读、可能再转给别人。更刺痛的是 Together AI 这起——泄露源头不是黑客，而是有写权限的 AI 编码智能体自己把凭证交了出去。对开发者的直接建议是：别再把真实密钥、密码贴进提示词；经第三方推理平台跑敏感请求前，先确认上游到底是谁。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html</li>
+<li>https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026</li>
+<li>https://tsnmedia.org/inference-prompt-leakage/</li>
+</ul>
+<blockquote>
+<p><strong>OpenAI 大宕机 3.5 小时：鉴权数据库双副本同时失效，请求失败率峰值 75%</strong></p>
+</blockquote>
+<figure><img src="https://blog.lexx.in/images/news/chatgpt-outage-75-percent-requests-failed-nov-2026.webp" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>OpenAI 11 月 21 日遭遇今年最严重的一次宕机：美西时间下午 1:48 至 5:21，ChatGPT 与 API 的请求失败率峰值达到 75%，付费与免费用户无一幸免，整起事件持续 211 分钟。OpenAI 当天就在状态页发布了完整的事后分析。触发原因出乎意料地普通：一次针对 Postgres 数据库服务的例行维护——该服务属于 OpenAI 的 Primary API 服务，负责全站的用户鉴权与服务间鉴权。维护期间，该数据库的两个只读副本同时失效，副本延迟随之无限增长，而鉴权是每条请求路径都绕不开的环节，于是全站跟着倒下。</p>
+<p>影响范围几乎覆盖 OpenAI 的全部服务：API 一侧，Chat Completions、微调、Embeddings、图片、Batch、音频、内容审核、Realtime 与 Files 接口全部受波及；ChatGPT 一侧，对话、登录、搜索、文件上传与语音模式均降级或直接失败。最终靠与服务提供商合作、在同一区域启用两个新副本才得以缓解。OpenAI 称已暂停同类维护活动、调整数据库配置以减少连接抖动，并上线了一个可按比例把流量从副本上切走的功能开关。</p>
+<p><strong>为什么重要：</strong> 模型本身没坏，坏的是模型下面的登录层——这次宕机等于给所有把业务押在单一供应商上的人提了个醒：鉴权这种&quot; boring 的基础设施&quot;一旦单点失效，前面再强的模型也接不上。OpenAI 当天就公开完整复盘，比多数云厂商的遮遮掩掩要坦率；但真正的问题还没被回答：下次维护再出问题时，承诺的备用容量是不是真的在。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://status.openai.com/incidents/01JMYB602A6H2E04Y1497J434X/write-up</li>
+<li>https://blog.lexx.in/news/chatgpt-outage-75-percent-requests-failed-nov-2026/</li>
+</ul>
+<h2>开发生态</h2>
+<blockquote>
+<p><strong>Qwen4 Max 登陆 Together AI，单次调用读完 Tornado 整仓并修好 bug</strong></p>
+</blockquote>
+<figure><img src="https://cdn.prod.website-files.com/69654e88dce9154b5f12070c/6b01fce39084a4a443ffe779_2026-11-19-qwen4-max-og-image.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>Together AI 11 月 21 日宣布，阿里旗舰模型 Qwen4 Max 已上线其 Serverless 推理平台，模型标识为 Qwen/Qwen4-Max。Qwen4 Max 是阿里 11 月 16 日发布的 Qwen 家族最新旗舰，采用稀疏混合专家架构，总参数 2.4 万亿、每 token 激活 710 亿，上下文窗口 100 万 token。Together AI 给出的演示颇具冲击力：把 Tornado 框架的全部 344 个文件（652,519 个 token）加一份 bug 报告放进单次请求，72 秒后拿到一个能通过维护者回归测试与 1673 项测试套件的补丁，这次调用按优惠价花了约 0.69 美元。标价为每百万输入 token 1.50 美元、输出 4.50 美元，11 月 22 日前七折。需要注意：该模型在 Together AI 上只接受流式请求，且思考模式默认开启、思考 token 按输出计费。</p>
+<p><strong>为什么重要：</strong> 国产旗舰模型正在把海外第三方推理平台当成标准分发渠道——继腾讯 Hy4 之后，Qwen4 Max 也在同一平台上架。100 万 token 上下文配上&quot;整仓一次读完&quot;的演示，瞄准的正是长代码库级 agent 任务；但演示是厂商自己挑的单个案例，真实修复率还得看独立评测。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.together.ai/blog/qwen4-max</li>
+<li>https://futurumgroup.com/insights/together-ai-brings-qwen4-max-to-serverless-inference-at-30-off/</li>
+</ul>
+<h2>技术与洞察</h2>
+<blockquote>
+<p><strong>黎曼猜想后续：Lean 社区认证证明正确，斯坦福纯人类草稿数小时内被指出问题</strong></p>
+</blockquote>
+<figure><img src="https://the-decoder.com/wp-content/uploads/2026/11/anthropic_riemann.png" alt="配图" loading="lazy" referrerpolicy="no-referrer"><figcaption>图片来源：相关报道</figcaption></figure>
+<p>昨日头条的黎曼猜想证明有了新进展：Lean 与 Mathlib 社区 11 月 21 日发表联合声明，认证 Anthropic 数学家 Levent Alpöge 与 Claude 合作完成的黎曼猜想证明&quot;陈述与证明均正确&quot;。据 MIT 数学家 Andrew Sutherland 公布的独立核查记录，全部 175,187 个模块零错误编译，Lean 内核逐模块重放零拒绝，两个独立编写的证明检查器 nanoda 与 con-leche 接受了完整证明导出，且 con-leche 的陈述比对确认五条定理与标准表述一致。但这仍不是学界共识：克雷数学研究所仍将黎曼猜想列为未解难题，尚无人类可读的传统论文，Alpöge 本人也承认证明中有些部分他自己尚未完全掌握。</p>
+<p>同一天出现的另一份证明则走向了反面。据《自然》报道，Alpöge 公布后数小时，斯坦福数学教授、美国数学会主席 Ravi Vakil 就在博客上贴出了 Alessandro Masullo 的纯人类广义黎曼猜想证明草稿——这份工作花了 12 年，斯坦福数论学家 Brian Conrad 已私下审阅数月，原计划再打磨一年才公开，是被 Anthropic 的突然宣布逼着提前放出来的。但 Vakil 在最初发布约 8 小时后更新帖子称，已有多人联系他指出证明中存在的问题，其中一些还是借助不同 AI 模型发现的；他本人对证明策略的正确性不作任何断言。</p>
+<p><strong>为什么重要：</strong> 两份证明的命运分叉，恰好说明了&quot;机器可核查&quot;与&quot;人类可理解&quot;之间的鸿沟：Alpöge 的证明靠 1700 万行 Lean 代码拿到了形式化认证，却没人能说清它为什么成立；Masullo 的草稿是人类写就、可读可审，却在公开数小时内就被发现问题。接下来数周，数学社区对这两份证明的验证进度，比发布当天的头条更值得关注。</p>
+<p>相关链接：</p>
+<ul>
+<li>https://www.nature.com/articles/d41586-026-03812-7</li>
+<li>https://the-decoder.com/hours-after-anthropic-claims-a-claude-proof-of-the-riemann-hypothesis-stanford-releases-an-all-human-competing-draft/</li>
+<li>https://sherafy.com/riemann-hypothesis-solved/</li>
+</ul>
+<hr>
+<p>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。</p>
+<footer>内容由 AI 搜集整理，可能存在误差，重要消息请以原文为准。<br>由 Muse 每日自动生成 · <a href="index.html">归档首页</a></footer>
+</div>
+</body>
+</html>
